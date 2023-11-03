@@ -1,10 +1,22 @@
 WinMetadata\Windows.winmd
-Assets\apple-touch-icon.png
-Assets\favicon.ico
-Assets\icon-192.png
-Assets\icon-192-maskable.png
-Assets\icon-512.png
-Assets\icon-512-maskable.png
+Assets\Icons\Burger-Menu\apple-touch-icon.png
+Assets\Icons\Burger-Menu\favicon.ico
+Assets\Icons\Burger-Menu\icon-192.png
+Assets\Icons\Burger-Menu\icon-192-maskable.png
+Assets\Icons\Burger-Menu\icon-512.png
+Assets\Icons\Burger-Menu\icon-512-maskable.png
+Assets\Icons\History-Icon\apple-touch-icon.png
+Assets\Icons\History-Icon\favicon.ico
+Assets\Icons\History-Icon\icon-192.png
+Assets\Icons\History-Icon\icon-192-maskable.png
+Assets\Icons\History-Icon\icon-512.png
+Assets\Icons\History-Icon\icon-512-maskable.png
+Assets\Icons\Settings-Icon\apple-touch-icon.png
+Assets\Icons\Settings-Icon\favicon.ico
+Assets\Icons\Settings-Icon\icon-192.png
+Assets\Icons\Settings-Icon\icon-192-maskable.png
+Assets\Icons\Settings-Icon\icon-512.png
+Assets\Icons\Settings-Icon\icon-512-maskable.png
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -14,5 +26,7 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
 Braw Bawbee Toss - Coin Flip App.xr.xml
+History.xbf
 MainPage.xbf
+Settings.xbf
 Properties\Default.rd.xml

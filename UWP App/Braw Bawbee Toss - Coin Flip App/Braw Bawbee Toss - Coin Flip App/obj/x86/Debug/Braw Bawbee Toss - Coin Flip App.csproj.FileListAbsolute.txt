@@ -43,3 +43,13 @@ C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip Ap
 C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424779200000000.json
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\History.xbf
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\Settings.xbf
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\History.g.i.cs
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\History.g.cs
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\Settings.g.i.cs
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\Settings.g.cs
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\History.xaml
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\Settings.xaml
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\History.xbf
+C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\obj\x86\Debug\Settings.xbf

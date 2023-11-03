@@ -8,18 +8,52 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Grid>
+        <Grid x:ConnectionId='2' x:Name="MainContent" Background="Red">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-    <Grid Background="Red">
-        <SplitView x:ConnectionId='2' x:Name="MenuSplitView" DisplayMode="CompactOverlay" IsPaneOpen="false" CompactPaneLength="40" OpenPaneLength="100" Margin="0 0 10 0">
-            <SplitView.Pane>
-                <StackPanel Background="Gray">
-                    <Button>
-                        <Image Source="Assets/icon-192-maskable.png" Width="40"></Image>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Button x:ConnectionId='6' Content="="                     Grid.Column="4" Background="White" HorizontalAlignment="Right" VerticalAlignment="Top"></Button>
+        </Grid>
+        <SplitView x:ConnectionId='3'  x:Name="MenuSplitView" DisplayMode="Overlay" IsPaneOpen="False" CompactPaneLength="40" OpenPaneLength="150" PanePlacement="Right">
+        <SplitView.Pane>
+            <StackPanel Background="White">
+
+            
+                <StackPanel Orientation="Horizontal">
+                    <Button x:ConnectionId='5' FontSize="25" Height="50" Width="50" Background="Transparent" Padding="0" HorizontalAlignment="Left"                       >
+                        <Image Source="Assets\Icons\History-Icon\icon-512.png" Width="40" Margin="-3,0,3,0"/>
                     </Button>
+                    <TextBlock Text="Flip History" FontSize="16" VerticalAlignment="Center"/>
                 </StackPanel>
-            </SplitView.Pane>
-        </SplitView>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:ConnectionId='4' FontSize="25" Height="50" Width="50" Background="Transparent" Padding="0" HorizontalAlignment="Left"                        >
+                        <Image Source="Assets\Icons\Settings-Icon\icon-512.png" Width="40" Margin="-3,0,3,0"/>
+                    </Button>
+                    <TextBlock Text="Settings" FontSize="16" VerticalAlignment="Center"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="UWP App made by Dominik Subocz" FontSize="16" VerticalAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+        </SplitView.Pane>
+    </SplitView>
     </Grid>
+
 
 </Page>
 

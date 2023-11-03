@@ -33,5 +33,42 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             titleBar.ButtonBackgroundColor = Colors.Black;
             titleBar.ButtonForegroundColor = Colors.White;
         }
+
+        private void MenuClicked(object sender, RoutedEventArgs e)
+        {
+            if (MenuSplitView.IsPaneOpen == false) 
+            { 
+
+                MenuSplitView.IsPaneOpen = true;
+
+            }
+
+            else if (MenuSplitView.IsPaneOpen == true)
+            {
+                MenuSplitView.IsPaneOpen = false;
+            }
+        }
+
+        private void SettingsClicked(object sender, RoutedEventArgs e)
+        {
+            if(MenuSplitView.IsPaneOpen == true)
+            {
+                Frame.Navigate(typeof(Settings));
+            }
+
+        }
+
+        private void HistoryClicked(object sender, RoutedEventArgs e)
+        {
+            if (MenuSplitView.IsPaneOpen == true)
+            {
+                Frame.Navigate(typeof(History));
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

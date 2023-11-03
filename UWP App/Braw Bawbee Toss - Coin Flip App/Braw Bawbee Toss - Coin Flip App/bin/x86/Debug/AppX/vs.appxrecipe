@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-03T12:52:26.391</Modified>
+      <Modified>2023-11-03T15:53:12.870</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\Braw Bawbee Toss - Coin Flip App.exe">
       <PackagePath>entrypoint\Braw Bawbee Toss - Coin Flip App.exe</PackagePath>
-      <Modified>2023-11-03T12:52:25.896</Modified>
+      <Modified>2023-11-03T15:53:12.369</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,25 +46,65 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T03:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\apple-touch-icon.png">
-      <PackagePath>Assets\apple-touch-icon.png</PackagePath>
-      <Modified>2023-11-03T12:31:41.852</Modified>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Burger-Menu\apple-touch-icon.png">
+      <PackagePath>Assets\Icons\Burger-Menu\apple-touch-icon.png</PackagePath>
+      <Modified>2023-11-03T14:18:21.120</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\icon-192-maskable.png">
-      <PackagePath>Assets\icon-192-maskable.png</PackagePath>
-      <Modified>2023-11-03T12:31:41.913</Modified>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Burger-Menu\icon-192-maskable.png">
+      <PackagePath>Assets\Icons\Burger-Menu\icon-192-maskable.png</PackagePath>
+      <Modified>2023-11-03T14:18:21.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\icon-192.png">
-      <PackagePath>Assets\icon-192.png</PackagePath>
-      <Modified>2023-11-03T12:31:41.873</Modified>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Burger-Menu\icon-192.png">
+      <PackagePath>Assets\Icons\Burger-Menu\icon-192.png</PackagePath>
+      <Modified>2023-11-03T14:18:21.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\icon-512-maskable.png">
-      <PackagePath>Assets\icon-512-maskable.png</PackagePath>
-      <Modified>2023-11-03T12:31:41.929</Modified>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Burger-Menu\icon-512-maskable.png">
+      <PackagePath>Assets\Icons\Burger-Menu\icon-512-maskable.png</PackagePath>
+      <Modified>2023-11-03T14:18:21.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\icon-512.png">
-      <PackagePath>Assets\icon-512.png</PackagePath>
-      <Modified>2023-11-03T12:31:41.893</Modified>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Burger-Menu\icon-512.png">
+      <PackagePath>Assets\Icons\Burger-Menu\icon-512.png</PackagePath>
+      <Modified>2023-11-03T14:18:21.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\History-Icon\apple-touch-icon.png">
+      <PackagePath>Assets\Icons\History-Icon\apple-touch-icon.png</PackagePath>
+      <Modified>2023-11-03T14:23:32.270</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\History-Icon\icon-192-maskable.png">
+      <PackagePath>Assets\Icons\History-Icon\icon-192-maskable.png</PackagePath>
+      <Modified>2023-11-03T14:23:32.331</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\History-Icon\icon-192.png">
+      <PackagePath>Assets\Icons\History-Icon\icon-192.png</PackagePath>
+      <Modified>2023-11-03T14:23:32.322</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\History-Icon\icon-512-maskable.png">
+      <PackagePath>Assets\Icons\History-Icon\icon-512-maskable.png</PackagePath>
+      <Modified>2023-11-03T14:23:32.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\History-Icon\icon-512.png">
+      <PackagePath>Assets\Icons\History-Icon\icon-512.png</PackagePath>
+      <Modified>2023-11-03T14:23:32.357</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Settings-Icon\apple-touch-icon.png">
+      <PackagePath>Assets\Icons\Settings-Icon\apple-touch-icon.png</PackagePath>
+      <Modified>2023-11-03T14:23:11.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Settings-Icon\icon-192-maskable.png">
+      <PackagePath>Assets\Icons\Settings-Icon\icon-192-maskable.png</PackagePath>
+      <Modified>2023-11-03T14:23:11.665</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Settings-Icon\icon-192.png">
+      <PackagePath>Assets\Icons\Settings-Icon\icon-192.png</PackagePath>
+      <Modified>2023-11-03T14:23:11.639</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Settings-Icon\icon-512-maskable.png">
+      <PackagePath>Assets\Icons\Settings-Icon\icon-512-maskable.png</PackagePath>
+      <Modified>2023-11-03T14:23:11.568</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Settings-Icon\icon-512.png">
+      <PackagePath>Assets\Icons\Settings-Icon\icon-512.png</PackagePath>
+      <Modified>2023-11-03T14:23:11.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -100,9 +140,17 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-09-08T14:35:02.305</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\favicon.ico">
-      <PackagePath>Assets\favicon.ico</PackagePath>
-      <Modified>2023-11-03T12:31:41.819</Modified>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Burger-Menu\favicon.ico">
+      <PackagePath>Assets\Icons\Burger-Menu\favicon.ico</PackagePath>
+      <Modified>2023-11-03T14:18:21.120</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\History-Icon\favicon.ico">
+      <PackagePath>Assets\Icons\History-Icon\favicon.ico</PackagePath>
+      <Modified>2023-11-03T14:23:32.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Settings-Icon\favicon.ico">
+      <PackagePath>Assets\Icons\Settings-Icon\favicon.ico</PackagePath>
+      <Modified>2023-11-03T14:23:11.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -110,15 +158,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\Braw Bawbee Toss - Coin Flip App.xr.xml">
       <PackagePath>Braw Bawbee Toss - Coin Flip App.xr.xml</PackagePath>
-      <Modified>2023-11-03T12:52:07.852</Modified>
+      <Modified>2023-11-03T15:51:49.193</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-11-03T12:52:25.847</Modified>
+      <Modified>2023-11-03T15:53:12.301</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\History.xbf">
+      <PackagePath>History.xbf</PackagePath>
+      <Modified>2023-11-03T15:53:12.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-11-03T12:52:25.847</Modified>
+      <Modified>2023-11-03T15:53:12.301</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\Settings.xbf">
+      <PackagePath>Settings.xbf</PackagePath>
+      <Modified>2023-11-03T15:53:12.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -126,11 +182,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-03T12:39:35.539</Modified>
+      <Modified>2023-11-03T14:51:43.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\Core\Braw Bawbee Toss - Coin Flip App.exe">
       <PackagePath>Braw Bawbee Toss - Coin Flip App.exe</PackagePath>
-      <Modified>2023-11-03T12:52:26.391</Modified>
+      <Modified>2023-11-03T15:53:12.854</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
