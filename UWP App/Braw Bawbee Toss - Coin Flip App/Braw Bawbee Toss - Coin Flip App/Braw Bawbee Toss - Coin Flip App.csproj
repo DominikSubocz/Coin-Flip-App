@@ -130,6 +130,12 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\apple-touch-icon.png" />
+    <Content Include="Assets\favicon.ico" />
+    <Content Include="Assets\icon-192-maskable.png" />
+    <Content Include="Assets\icon-192.png" />
+    <Content Include="Assets\icon-512-maskable.png" />
+    <Content Include="Assets\icon-512.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

@@ -10,7 +10,7 @@
 
 
     <Grid Background="Red">
-        <SplitView x:Name="MenuSplitView" DisplayMode="CompactOverlay" IsPaneOpen="false" CompactPaneLength="40" OpenPaneLength="100" Margin="0 0 10 0">
+        <SplitView x:ConnectionId='2' x:Name="MenuSplitView" DisplayMode="CompactOverlay" IsPaneOpen="false" CompactPaneLength="40" OpenPaneLength="100" Margin="0 0 10 0">
             <SplitView.Pane>
                 <StackPanel Background="Gray">
                     <Button>
@@ -22,3 +22,4 @@
     </Grid>
 
 </Page>
+
