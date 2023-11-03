@@ -1,0 +1,14 @@
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\bin\Debug\net6.0\App Model.exe
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\bin\Debug\net6.0\App Model.deps.json
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\bin\Debug\net6.0\App Model.runtimeconfig.json
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\bin\Debug\net6.0\App Model.dll
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\bin\Debug\net6.0\App Model.pdb
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\obj\Debug\net6.0\App Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\obj\Debug\net6.0\App Model.AssemblyInfoInputs.cache
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\obj\Debug\net6.0\App Model.AssemblyInfo.cs
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\obj\Debug\net6.0\App Model.csproj.CoreCompileInputs.cache
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\obj\Debug\net6.0\App Model.dll
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\obj\Debug\net6.0\refint\App Model.dll
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\obj\Debug\net6.0\App Model.pdb
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\obj\Debug\net6.0\App Model.genruntimeconfig.cache
+C:\Users\1742914\Downloads\Coin-Flip-App\Console App\App Model\App Model\obj\Debug\net6.0\ref\App Model.dll

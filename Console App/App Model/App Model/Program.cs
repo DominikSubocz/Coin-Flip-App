@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            CoinFlipMaster flip = new CoinFlipMaster();
+            string result = flip.flipCoin(1, 10);
+            Console.WriteLine(result);
         }
     }
 }

@@ -11,16 +11,26 @@ namespace App_Model
         Random rnd = new Random();
         
         
-        public bool flipCoin(int speed, int duration)
+        public string flipCoin(int speed, int duration)
         {
-            bool isHeads = false;
-            bool isTails = false;
+
             int result = 0;
             for (int i = 0; i < duration; i++) 
             {
                 result = rnd.Next(2);
-                Console.WriteLine(result);
             }
+
+            if(result == 0)
+            {
+                return "Heads!";
+            }
+            else
+            {
+                return "Tails!";
+            }
+
+
+           
         }
 
     }
