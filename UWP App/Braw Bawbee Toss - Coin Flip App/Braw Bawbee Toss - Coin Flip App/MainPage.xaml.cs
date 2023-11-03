@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +27,11 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         public MainPage()
         {
             this.InitializeComponent();
+            ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            titleBar.BackgroundColor = Colors.Black;
+            titleBar.ForegroundColor = Colors.White;
+            titleBar.ButtonBackgroundColor = Colors.Black;
+            titleBar.ButtonForegroundColor = Colors.White;
         }
     }
 }
