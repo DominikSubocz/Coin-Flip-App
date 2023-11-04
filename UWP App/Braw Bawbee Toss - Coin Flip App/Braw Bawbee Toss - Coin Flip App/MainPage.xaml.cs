@@ -27,6 +27,9 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
     {
         ObservableCollection<FontFamily> fonts = new ObservableCollection<FontFamily>();
 
+        private int headScore = 0;
+        private int tailScore = 0;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -81,6 +84,27 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         private void SpdChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
+
+        }
+
+        private void FlipCoin(object sender, RoutedEventArgs e)
+        {
+
+            bool isHeads = (new Random().Next(2) == 0);
+
+            if (isHeads)
+            {
+                headScore++;
+            }
+
+            else
+            {
+                tailScore++;
+            }
+
+            HeadsScoreTextBlock.Text = "Heads: " + headScore;
+            TailsScoreTextBlock.Text = "Tails: " + tailScore;
+
 
         }
     }
