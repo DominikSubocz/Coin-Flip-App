@@ -126,9 +126,6 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings.xaml.cs">
-      <DependentUpon>Settings.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -136,24 +133,10 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Icons\Burger-Menu\apple-touch-icon.png" />
-    <Content Include="Assets\Icons\Burger-Menu\favicon.ico" />
-    <Content Include="Assets\Icons\Burger-Menu\icon-192-maskable.png" />
-    <Content Include="Assets\Icons\Burger-Menu\icon-192.png" />
-    <Content Include="Assets\Icons\Burger-Menu\icon-512-maskable.png" />
-    <Content Include="Assets\Icons\Burger-Menu\icon-512.png" />
-    <Content Include="Assets\Icons\History-Icon\apple-touch-icon.png" />
-    <Content Include="Assets\Icons\History-Icon\favicon.ico" />
-    <Content Include="Assets\Icons\History-Icon\icon-192-maskable.png" />
-    <Content Include="Assets\Icons\History-Icon\icon-192.png" />
-    <Content Include="Assets\Icons\History-Icon\icon-512-maskable.png" />
-    <Content Include="Assets\Icons\History-Icon\icon-512.png" />
-    <Content Include="Assets\Icons\Settings-Icon\apple-touch-icon.png" />
-    <Content Include="Assets\Icons\Settings-Icon\favicon.ico" />
-    <Content Include="Assets\Icons\Settings-Icon\icon-192-maskable.png" />
-    <Content Include="Assets\Icons\Settings-Icon\icon-192.png" />
-    <Content Include="Assets\Icons\Settings-Icon\icon-512-maskable.png" />
-    <Content Include="Assets\Icons\Settings-Icon\icon-512.png" />
+    <Content Include="Assets\Icons\Burger-Menu\burger.svg" />
+    <Content Include="Assets\Icons\Close-Icon\close.svg" />
+    <Content Include="Assets\Icons\History-Icon\history.svg" />
+    <Content Include="Assets\Icons\Star-Icon\star.svg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -175,10 +158,6 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Settings.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

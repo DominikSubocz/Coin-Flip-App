@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SCpj+5yu5Yj6rlSJC9FnrdZ37uE0opTF3c/NgaWHDbZYdYfubXhmnWULoOZ4PXYD0CI4BQyByKV/51oMyRmw6A==",
+  "dgSpecHash": "dvOxYh0qxX2yQjNxUuWDCByMAVXXlo84XmpARtjBGvuJJnlDDfqTCp7uM4hFJ86sjteAsslzNxv6CEwvvWyyzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\UWP App\\Braw Bawbee Toss - Coin Flip App\\Braw Bawbee Toss - Coin Flip App\\Braw Bawbee Toss - Coin Flip App.csproj",
+  "projectFilePath": "F:\\Coin-Flip-App\\UWP App\\Braw Bawbee Toss - Coin Flip App\\Braw Bawbee Toss - Coin Flip App\\Braw Bawbee Toss - Coin Flip App.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",
