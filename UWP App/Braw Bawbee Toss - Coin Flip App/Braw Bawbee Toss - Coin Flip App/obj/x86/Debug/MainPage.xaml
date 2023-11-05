@@ -30,6 +30,7 @@
             <TextBlock x:ConnectionId='11' x:Name="TailsScoreTextBlock" FontSize="32" Grid.Column="2" Grid.Row="1" Text="Tails: " HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
             <Button x:ConnectionId='12' 
+                x:Name="FlipBtn"
                 Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" 
                 Background="White" Width="250" Height="110" Content="Toss a Cooin" FontSize="24"
                 VerticalAlignment="Center" HorizontalAlignment="Center"
