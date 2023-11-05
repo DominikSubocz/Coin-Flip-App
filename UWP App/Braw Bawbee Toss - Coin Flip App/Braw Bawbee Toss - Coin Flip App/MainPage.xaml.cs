@@ -7,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -33,6 +34,8 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         private double delayDuration = 0;
 
+
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -46,7 +49,10 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             fonts.Add(new FontFamily("Arial"));
             fonts.Add(new FontFamily("Courier New"));
             fonts.Add(new FontFamily("Times New Roman"));
+            videoPlayer.Play();
+
         }
+
 
         private void MenuClicked(object sender, RoutedEventArgs e)
         {
@@ -98,6 +104,13 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             if (isHeads)
             {
                 headScore++;
+                // Set the video source using a Uri
+                videoPlayer.Source = new ("Assets\\Videos\\1s.mp4");
+
+
+
+                // Play the video
+                videoPlayer.Play();
             }
 
             else
@@ -117,6 +130,8 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
 
         }
+
+
 
  
     }

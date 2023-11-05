@@ -46,6 +46,9 @@
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Star-Icon\star.svg">
       <PackagePath>Assets\Icons\Star-Icon\star.svg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\1s.mp4">
+      <PackagePath>Assets\Videos\1s.mp4</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
