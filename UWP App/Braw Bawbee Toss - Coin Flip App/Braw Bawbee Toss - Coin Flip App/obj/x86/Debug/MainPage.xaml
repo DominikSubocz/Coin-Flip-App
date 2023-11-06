@@ -29,12 +29,16 @@
             <TextBlock x:ConnectionId='10' x:Name="HeadsScoreTextBlock" FontSize="32" Grid.Column="1" Grid.Row="1" Text="Heads: " HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBlock x:ConnectionId='11' x:Name="TailsScoreTextBlock" FontSize="32" Grid.Column="2" Grid.Row="1" Text="Tails: " HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
-            <MediaElement x:ConnectionId='12' x:Name="videoPlayer" AutoPlay="False" AreTransportControlsEnabled="True" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <MediaElement x:ConnectionId='12' 
+                x:Name="videoPlayer" Source="Assets\Videos\1s.mp4" 
+                AutoPlay="False" AreTransportControlsEnabled="False" 
+                Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                PlaybackRate="1.0"/>
 
 
             <Button x:ConnectionId='13' 
                 x:Name="FlipBtn"
-                Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" 
+                Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" 
                 Background="White" Width="250" Height="110" Content="Toss a Cooin" FontSize="24"
                 VerticalAlignment="Center" HorizontalAlignment="Center"
                                 >
@@ -82,8 +86,12 @@
                         <Slider x:ConnectionId='7' 
                             x:Name="speedSlider" 
                             Width="130"
-                            StepFrequency="1"
-                                                     />
+                            StepFrequency="0.5"
+                                                     
+                            Value="1"
+                            Minimum="0.1"
+                            Maximum="2"
+                            />
                     </StackPanel>
 
                     <StackPanel Orientation="Vertical"  HorizontalAlignment="Center" Padding="0 10 0 0" >
@@ -92,13 +100,18 @@
                             x:Name="durationSlider" 
                             Width="130"
                             StepFrequency="1"
-                                                      />
+                                                      
+                            Value="1"
+                            Minimum="0"
+                            Maximum="5"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Padding="0 10 0 0">
                         <TextBlock Text="Volume" FontSize="16" VerticalAlignment="Center"/>
-                        <Slider x:ConnectionId='5' x:Name="volumeSlider" Width="130"
-                                                    />
+                        <Slider x:ConnectionId='5' 
+                            x:Name="volumeSlider" 
+                            Width="130"
+                                                        />
 
                     </StackPanel>
                 </StackPanel>

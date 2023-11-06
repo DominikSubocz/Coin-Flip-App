@@ -49,10 +49,10 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             fonts.Add(new FontFamily("Arial"));
             fonts.Add(new FontFamily("Courier New"));
             fonts.Add(new FontFamily("Times New Roman"));
-            videoPlayer.Play();
 
         }
 
+        public double PlaybackRate { get; set; }
 
         private void MenuClicked(object sender, RoutedEventArgs e)
         {
@@ -76,14 +76,16 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             }
         }
 
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
         private void VolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {
-
+        {       
+        
         }
 
         private void DurChanged(object sender, RangeBaseValueChangedEventArgs e)
@@ -91,9 +93,13 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             delayDuration = durationSlider.Value;
         }
 
+
+
         private void SpdChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
 
+            double newSpeed = speedSlider.Value;
+            videoPlayer.PlaybackRate = newSpeed;
         }
 
         private async void FlipCoin(object sender, RoutedEventArgs e)
@@ -103,20 +109,23 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
             if (isHeads)
             {
+
+                videoPlayer.Source = new Uri("ms-appx:///Assets/Videos/heads-1s.mp4");
                 headScore++;
-                // Set the video source using a Uri
-                videoPlayer.Source = new ("Assets\\Videos\\1s.mp4");
 
-
-
-                // Play the video
-                videoPlayer.Play();
             }
 
             else
             {
+                videoPlayer.Source = new Uri("ms-appx:///Assets/Videos/1s.mp4");
                 tailScore++;
+
             }
+
+            videoPlayer.MediaOpened += (s, args) =>
+            {
+                videoPlayer.Play();
+            };
 
             FlipBtn.IsEnabled = false;
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);

@@ -138,6 +138,7 @@
     <Content Include="Assets\Icons\History-Icon\history.svg" />
     <Content Include="Assets\Icons\Star-Icon\star.svg" />
     <Content Include="Assets\Videos\1s.mp4" />
+    <Content Include="Assets\Videos\heads-1s.mp4" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

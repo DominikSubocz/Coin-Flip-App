@@ -59,6 +59,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
       <RootProperty Name="Width" />
       <RootProperty Name="StepFrequency" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
       <RootEvent Name="ValueChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
@@ -80,8 +83,10 @@
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
+      <RootProperty Name="Source" />
       <RootProperty Name="AutoPlay" />
       <RootProperty Name="AreTransportControlsEnabled" />
+      <RootProperty Name="PlaybackRate" />
     </RootType>
     <RootType FullName="Braw_Bawbee_Toss___Coin_Flip_App.MainPage" />
   </Roots.RootTypes>
