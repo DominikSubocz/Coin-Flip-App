@@ -11,6 +11,10 @@
     <Grid>
         <Grid x:Name="MainContent" Background="Red">
             <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -25,27 +29,40 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+            <Rectangle Fill="Gray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" />
 
-            <TextBlock x:Name="HeadsScoreTextBlock" FontSize="32" Grid.Column="1" Grid.Row="1" Text="Heads: " HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBlock x:Name="TailsScoreTextBlock" FontSize="32" Grid.Column="2" Grid.Row="1" Text="Tails: " HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Rectangle Fill="DarkGray" Grid.Row="3" Grid.Column="2" Height="90" VerticalAlignment="Top" Margin="0 50 0 0"  RadiusX="20" RadiusY="50"/>
+            <Rectangle Fill="DarkGray" Grid.Row="3" Grid.Column="5" Height="90" VerticalAlignment="Top" Margin="0 50 0 0"  RadiusX="20" RadiusY="50"/>
 
-            <MediaElement 
+            <TextBlock x:Name="HeadsScoreTextBlock" FontSize="64" Grid.Column="2" Grid.Row="3" Text="00 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
+            <TextBlock x:Name="TailsScoreTextBlock" FontSize="64" Foreground="White" Grid.Column="5" Grid.Row="3" Text="00 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
+
+            <TextBlock FontSize="84" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="0" Text="Coin Flip" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+            <TextBlock FontSize="64" Grid.Column="2" Grid.Row="2" Text="Heads: " HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBlock  FontSize="64" Foreground="White" Grid.Column="5" Grid.Row="2" Text="Tails: " HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+            <!--<MediaElement 
                 x:Name="videoPlayer" Source="Assets\Videos\1s.mp4" 
                 AutoPlay="False" AreTransportControlsEnabled="False" 
                 Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
-                PlaybackRate="1.0"/>
+                PlaybackRate="1.0"/>-->
 
 
             <Button 
                 x:Name="FlipBtn"
-                Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" 
+                Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="3" 
                 Background="White" Width="250" Height="110" Content="Toss a Cooin" FontSize="24"
                 VerticalAlignment="Center" HorizontalAlignment="Center"
-                Click="FlipCoin">
+                Click="FlipCoin"
+                CornerRadius="50">
+
                 
             </Button>
 
-            <Button Click="MenuClicked" Grid.Column="4" Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Top">
+
+
+            <Button Click="MenuClicked" Grid.Column="7" Background="Transparent"  HorizontalAlignment="Right" VerticalAlignment="Top">
                 <Image Source ="Assets\Icons\Burger-Menu\burger.svg" Width="70"/>
             </Button>
         </Grid>
