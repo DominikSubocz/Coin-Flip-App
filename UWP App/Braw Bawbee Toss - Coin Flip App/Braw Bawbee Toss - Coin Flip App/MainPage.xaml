@@ -29,6 +29,10 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+            <MediaElement x:Name="videoplayer" Source="Assets\Videos\gt-1s.mov"
+                          AutoPlay="False" AreTransportControlsEnabled="False"
+                          Grid.RowSpan="2"
+                          Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"/>
             <Rectangle Fill="Gray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" />
 
             <Rectangle Fill="DarkGray" Grid.Row="3" Grid.Column="2" Height="90" VerticalAlignment="Top" Margin="0 50 0 0"  RadiusX="20" RadiusY="50"/>
@@ -42,11 +46,10 @@
             <TextBlock FontSize="64" Grid.Column="2" Grid.Row="2" Text="Heads: " HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
             <TextBlock  FontSize="64" Foreground="White" Grid.Column="5" Grid.Row="2" Text="Tails: " HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
 
-            <!--<MediaElement 
-                x:Name="videoPlayer" Source="Assets\Videos\1s.mp4" 
-                AutoPlay="False" AreTransportControlsEnabled="False" 
-                Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
-                PlaybackRate="1.0"/>-->
+
+
+
+
 
 
             <Button 

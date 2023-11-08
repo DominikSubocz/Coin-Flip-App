@@ -99,7 +99,6 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         {
 
             double newSpeed = speedSlider.Value;
-            videoPlayer.PlaybackRate = newSpeed;
         }
 
         private async void FlipCoin(object sender, RoutedEventArgs e)
@@ -110,22 +109,16 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             if (isHeads)
             {
 
-                videoPlayer.Source = new Uri("ms-appx:///Assets/Videos/heads-1s.mp4");
                 headScore++;
 
             }
 
             else
             {
-                videoPlayer.Source = new Uri("ms-appx:///Assets/Videos/1s.mp4");
                 tailScore++;
 
             }
 
-            videoPlayer.MediaOpened += (s, args) =>
-            {
-                videoPlayer.Play();
-            };
 
             FlipBtn.IsEnabled = false;
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);
