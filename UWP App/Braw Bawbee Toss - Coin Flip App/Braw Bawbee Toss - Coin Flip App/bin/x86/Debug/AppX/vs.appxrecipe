@@ -30,13 +30,13 @@
     <AppXManifest Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-08T13:18:28.347</Modified>
+      <Modified>2023-11-08T13:22:58.799</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\Braw Bawbee Toss - Coin Flip App.exe">
       <PackagePath>entrypoint\Braw Bawbee Toss - Coin Flip App.exe</PackagePath>
-      <Modified>2023-11-08T13:18:27.444</Modified>
+      <Modified>2023-11-08T13:22:58.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -110,15 +110,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-11-08T13:18:27.358</Modified>
+      <Modified>2023-11-08T13:22:58.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\History.xbf">
       <PackagePath>History.xbf</PackagePath>
-      <Modified>2023-11-08T13:18:27.358</Modified>
+      <Modified>2023-11-08T13:22:58.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-11-08T13:18:27.358</Modified>
+      <Modified>2023-11-08T13:22:58.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -130,7 +130,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\bin\x86\Debug\Core\Braw Bawbee Toss - Coin Flip App.exe">
       <PackagePath>Braw Bawbee Toss - Coin Flip App.exe</PackagePath>
-      <Modified>2023-11-08T13:18:28.339</Modified>
+      <Modified>2023-11-08T13:22:58.790</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
