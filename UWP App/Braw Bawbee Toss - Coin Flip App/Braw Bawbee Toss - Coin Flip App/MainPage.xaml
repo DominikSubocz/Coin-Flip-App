@@ -29,17 +29,19 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <MediaElement x:Name="videoplayer" Source="Assets\Videos\gt-1s.mov"
+            <!--<MediaElement x:Name="videoplayer" Source="Assets\Videos\gt-1s.mov"
                           AutoPlay="False" AreTransportControlsEnabled="False"
                           Grid.RowSpan="2"
-                          Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"/>
+                          Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"/>-->
             <Rectangle Fill="Gray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" />
 
             <Rectangle Fill="DarkGray" Grid.Row="3" Grid.Column="2" Height="90" VerticalAlignment="Top" Margin="0 50 0 0"  RadiusX="20" RadiusY="50"/>
             <Rectangle Fill="DarkGray" Grid.Row="3" Grid.Column="5" Height="90" VerticalAlignment="Top" Margin="0 50 0 0"  RadiusX="20" RadiusY="50"/>
 
-            <TextBlock x:Name="HeadsScoreTextBlock" FontSize="64" Grid.Column="2" Grid.Row="3" Text="00 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
-            <TextBlock x:Name="TailsScoreTextBlock" FontSize="64" Foreground="White" Grid.Column="5" Grid.Row="3" Text="00 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
+            <TextBlock x:Name="resultTest" FontSize="64" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Text="" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <TextBlock x:Name="HeadsScoreTextBlock" FontSize="64" Grid.Column="2" Grid.Row="3" Text="0 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
+            <TextBlock x:Name="TailsScoreTextBlock" FontSize="64" Foreground="White" Grid.Column="5" Grid.Row="3" Text="0 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
 
             <TextBlock FontSize="84" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="0" Text="Coin Flip" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
             

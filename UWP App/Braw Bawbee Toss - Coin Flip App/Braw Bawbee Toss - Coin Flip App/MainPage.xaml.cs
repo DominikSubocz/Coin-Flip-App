@@ -110,12 +110,15 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             {
 
                 headScore++;
+                resultTest.Text = "Heads";
 
             }
 
             else
             {
                 tailScore++;
+                resultTest.Text = "Tails";
+
 
             }
 
@@ -127,8 +130,8 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);
             FlipBtn.IsEnabled = true;
-            HeadsScoreTextBlock.Text = "Heads: " + headScore;
-            TailsScoreTextBlock.Text = "Tails: " + tailScore;
+            HeadsScoreTextBlock.Text = headScore.ToString();
+            TailsScoreTextBlock.Text = tailScore.ToString();
 
 
         }
