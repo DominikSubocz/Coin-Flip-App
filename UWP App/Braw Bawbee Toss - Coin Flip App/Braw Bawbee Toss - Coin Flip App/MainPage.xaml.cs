@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
+using Windows.Devices.Enumeration;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
@@ -32,13 +35,12 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         private int headScore = 0;
         private int tailScore = 0;
 
-        private double delayDuration = 0;
-
 
 
         public MainPage()
         {
             this.InitializeComponent();
+            this.DataContext = this; // Set DataContext to the current instance of MainPage
             ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
             titleBar.BackgroundColor = Colors.Black;
             titleBar.ForegroundColor = Colors.White;
@@ -50,9 +52,13 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             fonts.Add(new FontFamily("Courier New"));
             fonts.Add(new FontFamily("Times New Roman"));
 
+            videoPlayer.MediaOpened += (s, args) =>
+            {
+                videoPlayer.Play();
+            };
+
         }
 
-        public double PlaybackRate { get; set; }
 
         private void MenuClicked(object sender, RoutedEventArgs e)
         {
@@ -76,48 +82,67 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             }
         }
 
-
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void VolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
         {       
         
         }
 
-        private void DurChanged(object sender, RangeBaseValueChangedEventArgs e)
+
+        private string GetVideoFileName(string coinType, int duration)
         {
-            delayDuration = durationSlider.Value;
+            string baseVideoName = $"{coinType}-{duration}";
+
+            string resultPlaceholder = "{result}";
+
+            string fullVideoName = $"{baseVideoName}-{resultPlaceholder}.mp4";
+
+            return fullVideoName;
         }
 
-
-
-        private void SpdChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {
-
-            double newSpeed = speedSlider.Value;
-        }
 
         private async void FlipCoin(object sender, RoutedEventArgs e)
         {
+            int coinIndex = CoinComboBox.SelectedIndex;
+            string coinType = "Gold";
+            switch (coinIndex)
+            {
+                case 0:
+                    coinType = "Gold";
+                    break;
+                case 1:
+                    coinType = "Silver";
+                    break;
+                case 2:
+                    coinType = "Bronze";
+                    break;
 
+            }
+
+            int duration = (int)durationSlider.Value;
+
+            string video = GetVideoFileName(coinType, duration);
+            
             bool isHeads = (new Random().Next(2) == 0);
+            string result = isHeads ? "Heads" : "Tails";
+
+            video = video.Replace("{result}", result);
+            videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}");
+
+
 
             if (isHeads)
             {
 
                 headScore++;
-                resultTest.Text = "Heads";
+                videoPlayer.Play();
 
             }
 
             else
             {
                 tailScore++;
-                resultTest.Text = "Tails";
+                videoPlayer.Play();
+
 
 
             }
@@ -126,7 +151,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             FlipBtn.IsEnabled = false;
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);
 
-            await Task.Delay(TimeSpan.FromSeconds(delayDuration));
+            await Task.Delay(TimeSpan.FromSeconds(duration));
 
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);
             FlipBtn.IsEnabled = true;
@@ -136,8 +161,10 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         }
 
+        private void GuessClicked(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GuessFlip));
 
-
- 
+        }
     }
 }

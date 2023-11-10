@@ -119,6 +119,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Assets\Models\HistoryItem.cs" />
+    <Compile Include="GuessFlip.xaml.cs">
+      <DependentUpon>GuessFlip.xaml</DependentUpon>
+    </Compile>
     <Compile Include="History.xaml.cs">
       <DependentUpon>History.xaml</DependentUpon>
     </Compile>
@@ -137,7 +141,10 @@
     <Content Include="Assets\Icons\Close-Icon\close.svg" />
     <Content Include="Assets\Icons\History-Icon\history.svg" />
     <Content Include="Assets\Icons\Star-Icon\star.svg" />
-    <Content Include="Assets\Videos\gt-1s.mov" />
+    <Content Include="Assets\Videos\Gold-1-Heads.mp4" />
+    <Content Include="Assets\Videos\GH-2S.mp4" />
+    <Content Include="Assets\Videos\Gold-1-Tails.mp4" />
+    <Content Include="Assets\Videos\GT-2S.mp4" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -152,6 +159,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="GuessFlip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="History.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

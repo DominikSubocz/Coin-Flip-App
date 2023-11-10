@@ -20,7 +20,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="75"/>
-                
+
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
@@ -29,22 +29,24 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <!--<MediaElement x:Name="videoplayer" Source="Assets\Videos\gt-1s.mov"
-                          AutoPlay="False" AreTransportControlsEnabled="False"
-                          Grid.RowSpan="2"
-                          Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"/>-->
-            <Rectangle Fill="Gray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" />
+
+
+            <Rectangle Fill="gray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" />
 
             <Rectangle Fill="DarkGray" Grid.Row="3" Grid.Column="2" Height="90" VerticalAlignment="Top" Margin="0 50 0 0"  RadiusX="20" RadiusY="50"/>
             <Rectangle Fill="DarkGray" Grid.Row="3" Grid.Column="5" Height="90" VerticalAlignment="Top" Margin="0 50 0 0"  RadiusX="20" RadiusY="50"/>
 
-            <TextBlock x:Name="resultTest" FontSize="64" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Text="" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <MediaElement x:Name="videoPlayer" Source="assets\videos\Gold-1-Heads.mp4"
+                          AutoPlay="false" AreTransportControlsEnabled="false"
+                          Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"/>
+            <!-- Used for testing -->
+            <!--<TextBlock x:Name="resultTest" FontSize="64" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="5" Text="" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
 
             <TextBlock x:Name="HeadsScoreTextBlock" FontSize="64" Grid.Column="2" Grid.Row="3" Text="0 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
             <TextBlock x:Name="TailsScoreTextBlock" FontSize="64" Foreground="White" Grid.Column="5" Grid.Row="3" Text="0 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
 
             <TextBlock FontSize="84" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="0" Text="Coin Flip" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-            
+
             <TextBlock FontSize="64" Grid.Column="2" Grid.Row="2" Text="Heads: " HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
             <TextBlock  FontSize="64" Foreground="White" Grid.Column="5" Grid.Row="2" Text="Tails: " HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
 
@@ -63,7 +65,7 @@
                 Click="FlipCoin"
                 CornerRadius="50">
 
-                
+
             </Button>
 
 
@@ -73,7 +75,7 @@
             </Button>
         </Grid>
         <SplitView  x:Name="MenuSplitView" DisplayMode="Overlay" IsPaneOpen="False" CompactPaneLength="40" OpenPaneLength="175" PanePlacement="Right">
-        <SplitView.Pane>
+            <SplitView.Pane>
                 <StackPanel Background="DarkRed">
 
                     <Button Click="MenuClicked" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Top">
@@ -90,7 +92,7 @@
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Padding="0 10 0 0">
-                        <Button FontSize="25" Height="50" Width="auto" Background="Transparent" Padding="0" HorizontalAlignment="Left">
+                        <Button FontSize="25" Height="50" Width="auto" Background="Transparent" Padding="0" HorizontalAlignment="Left" Click="GuessClicked">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source ="Assets\Icons\Star-Icon\star.svg" Width="40"/>
                                 <TextBlock Text="Try Your Luck" FontSize="16" VerticalAlignment="Center"/>
@@ -100,22 +102,14 @@
                     </StackPanel>
 
                     <StackPanel Height="150" HorizontalAlignment="Center" Padding="0 10 0 0">
-                        <ComboBox x:Name="FontsCombo" Header="Fonts" Height="50" Width="150" 
-                         ItemsSource="{x:Bind fonts}"   DisplayMemberPath="Source"/>
+                        <ComboBox x:Name="CoinComboBox" SelectedIndex="0">
+                            <ComboBoxItem Content="Gold"/>
+                            <ComboBoxItem Content="Silver"/>
+                            <ComboBoxItem Content="Bronze"/>
+                        </ComboBox>
                     </StackPanel>
 
-                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Padding="0 10 0 0">
-                        <TextBlock Text="Flip Speed" FontSize="16" VerticalAlignment="Center"/>
-                        <Slider 
-                            x:Name="speedSlider" 
-                            Width="130"
-                            StepFrequency="0.5"
-                            ValueChanged="SpdChanged"
-                            Value="1"
-                            Minimum="0.1"
-                            Maximum="2"
-                            />
-                    </StackPanel>
+
 
                     <StackPanel Orientation="Vertical"  HorizontalAlignment="Center" Padding="0 10 0 0" >
                         <TextBlock Text="Flip Duration" FontSize="16" VerticalAlignment="Center"/>
@@ -123,7 +117,6 @@
                             x:Name="durationSlider" 
                             Width="130"
                             StepFrequency="1"
-                            ValueChanged="DurChanged" 
                             Value="1"
                             Minimum="0"
                             Maximum="5"/>
@@ -139,7 +132,7 @@
                     </StackPanel>
                 </StackPanel>
             </SplitView.Pane>
-    </SplitView>
+        </SplitView>
     </Grid>
 
 
