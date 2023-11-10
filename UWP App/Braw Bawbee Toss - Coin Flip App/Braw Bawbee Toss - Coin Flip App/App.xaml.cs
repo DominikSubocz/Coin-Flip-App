@@ -26,6 +26,8 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
+        /// 
+
         public App()
         {
             this.InitializeComponent();

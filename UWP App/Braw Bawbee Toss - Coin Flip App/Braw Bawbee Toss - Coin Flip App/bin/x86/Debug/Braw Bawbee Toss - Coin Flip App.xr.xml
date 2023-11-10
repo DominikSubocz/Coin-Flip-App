@@ -97,6 +97,14 @@
       <RootProperty Name="AreTransportControlsEnabled" />
     </RootType>
     <RootType FullName="Braw_Bawbee_Toss___Coin_Flip_App.GuessFlip" />
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
     <RootType FullName="Braw_Bawbee_Toss___Coin_Flip_App.History" />
     <RootType FullName="Braw_Bawbee_Toss___Coin_Flip_App.MainPage" />
   </Roots.RootTypes>

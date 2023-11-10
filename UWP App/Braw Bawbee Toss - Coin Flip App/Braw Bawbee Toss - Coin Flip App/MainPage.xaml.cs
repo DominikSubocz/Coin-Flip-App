@@ -28,9 +28,12 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
+
     public sealed partial class MainPage : Page
     {
-        ObservableCollection<FontFamily> fonts = new ObservableCollection<FontFamily>();
+
+        private History historyPage;
 
         private int headScore = 0;
         private int tailScore = 0;
@@ -40,6 +43,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         public MainPage()
         {
             this.InitializeComponent();
+
             this.DataContext = this; // Set DataContext to the current instance of MainPage
             ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
             titleBar.BackgroundColor = Colors.Black;
@@ -47,18 +51,17 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             titleBar.ButtonBackgroundColor = Colors.Black;
             titleBar.ButtonForegroundColor = Colors.White;
 
-            this.InitializeComponent();
-            fonts.Add(new FontFamily("Arial"));
-            fonts.Add(new FontFamily("Courier New"));
-            fonts.Add(new FontFamily("Times New Roman"));
+            historyPage = new History();
+
 
             videoPlayer.MediaOpened += (s, args) =>
             {
                 videoPlayer.Play();
             };
 
-        }
 
+
+        }
 
         private void MenuClicked(object sender, RoutedEventArgs e)
         {
@@ -74,18 +77,14 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
                 MenuSplitView.IsPaneOpen = false;
             }
         }
-        private void HistoryClicked(object sender, RoutedEventArgs e)
-        {
-            if (MenuSplitView.IsPaneOpen == true)
-            {
-                Frame.Navigate(typeof(History));
-            }
-        }
+
+
 
         private void VolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
         {       
         
         }
+
 
 
         private string GetVideoFileName(string coinType, int duration)
@@ -99,6 +98,13 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             return fullVideoName;
         }
 
+        private void HistoryClicked(object sender, RoutedEventArgs e)
+        {
+            if (MenuSplitView.IsPaneOpen == true)
+            {
+                Frame.Navigate(typeof(History));
+            }
+        }
 
         private async void FlipCoin(object sender, RoutedEventArgs e)
         {
@@ -130,6 +136,8 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
 
 
+
+
             if (isHeads)
             {
 
@@ -152,6 +160,8 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);
 
             await Task.Delay(TimeSpan.FromSeconds(duration));
+
+
 
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);
             FlipBtn.IsEnabled = true;
