@@ -19,22 +19,21 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App.Assets.Models
 
         public class ItemManager
         {
-
             public static List<HistoryItems> AddItems()
             {
                 var items = new List<HistoryItems>();
 
-                items.Add(new HistoryItems {CoinType = "Gold", Duration = 1, Mode = "Coin Flip", Result ="Heads"}); 
-            
+                items.Add(new HistoryItems { CoinType = "Gold", Duration = 1, Mode = "Coin Flip", Result = "Heads" });
+                items.Add(new HistoryItems { CoinType = "Silver", Duration = 2, Mode = "Guess Mode", Result = "Correct" });
+                items.Add(new HistoryItems { CoinType = "Bronze", Duration = 3, Mode = "Coin Flip", Result = "Tails" });
+
                 return items;
             }
-            
-                
         }
 
 
-        
-        }
+
+    }
 
     
 }

@@ -28,12 +28,13 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         private MainPage mainPage;
 
-        private List<HistoryItems> historyItems;
+        public List<HistoryItems> historyItems;
 
         public History()
         {
             this.InitializeComponent();
-            historyItems = new List<HistoryItems>();
+            historyItems = HistoryItems.ItemManager.AddItems();
+            this.DataContext = this;
 
         }
 
@@ -46,22 +47,13 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         }
 
-
-
-        private void MenuClicked(object sender, RoutedEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (MenuSplitView.IsPaneOpen == false)
-            {
-
-                MenuSplitView.IsPaneOpen = true;
-
-            }
-
-            else if (MenuSplitView.IsPaneOpen == true)
-            {
-                MenuSplitView.IsPaneOpen = false;
-            }
+            // Access the HistoryService and get the updated history
+            var historyItems = HistoryService.Instance.HistoryItems;
+            // Update your UI with the historyItems as needed
         }
+
 
     }
 }

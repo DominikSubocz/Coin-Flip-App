@@ -21,6 +21,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace Braw_Bawbee_Toss___Coin_Flip_App
@@ -102,12 +103,15 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         {
             if (MenuSplitView.IsPaneOpen == true)
             {
-                Frame.Navigate(typeof(History));
+
+                Frame.Navigate(typeof(History), this);
+
             }
         }
 
         private async void FlipCoin(object sender, RoutedEventArgs e)
         {
+            string mode = "Coin Flip";
             int coinIndex = CoinComboBox.SelectedIndex;
             string coinType = "Gold";
             switch (coinIndex)
@@ -160,7 +164,12 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);
 
             await Task.Delay(TimeSpan.FromSeconds(duration));
+            // Assume you have flip results
 
+
+
+            // Access the HistoryService and add the information
+            HistoryService.Instance.AddHistoryItem(coinType, duration, mode, result);
 
 
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);
