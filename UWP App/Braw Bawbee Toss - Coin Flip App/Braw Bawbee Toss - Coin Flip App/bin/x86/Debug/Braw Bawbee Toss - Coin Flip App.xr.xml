@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Duration" />
+    <RootPropertyPathName Name="Result" />
+    <RootPropertyPathName Name="Mode" />
+    <RootPropertyPathName Name="CoinType" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
@@ -36,6 +42,7 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Background" />
@@ -59,11 +66,11 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Value" />
       <RootProperty Name="Width" />
       <RootProperty Name="StepFrequency" />
-      <RootProperty Name="Value" />
       <RootProperty Name="Minimum" />
-      <RootProperty Name="Maximum" />
       <RootEvent Name="ValueChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
@@ -95,16 +102,18 @@
       <RootProperty Name="Source" />
       <RootProperty Name="AutoPlay" />
       <RootProperty Name="AreTransportControlsEnabled" />
+      <RootProperty Name="IsLooping" />
     </RootType>
     <RootType FullName="Braw_Bawbee_Toss___Coin_Flip_App.GuessFlip" />
-    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
-      <RootProperty Name="ItemsSource" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Braw_Bawbee_Toss___Coin_Flip_App.History" />
     <RootType FullName="Braw_Bawbee_Toss___Coin_Flip_App.MainPage" />
   </Roots.RootTypes>

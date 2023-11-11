@@ -40,11 +40,23 @@
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Close-Icon\close.svg">
       <PackagePath>Assets\Icons\Close-Icon\close.svg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Coin-Icon\coin-icon.svg">
+      <PackagePath>Assets\Icons\Coin-Icon\coin-icon.svg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\History-Icon\history.svg">
       <PackagePath>Assets\Icons\History-Icon\history.svg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Icons\Star-Icon\star.svg">
       <PackagePath>Assets\Icons\Star-Icon\star.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Sounds\coin_flip.wav">
+      <PackagePath>Assets\Sounds\coin_flip.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Sounds\guess_correct.wav">
+      <PackagePath>Assets\Sounds\guess_correct.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Sounds\guess_wrong.mp3">
+      <PackagePath>Assets\Sounds\guess_wrong.mp3</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Gold-1-Heads.mp4">
       <PackagePath>Assets\Videos\Gold-1-Heads.mp4</PackagePath>

@@ -35,6 +35,11 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             {
                 videoPlayer.Play();
             };
+
+            soundPlayer.MediaOpened += (s, args) =>
+            {
+                soundPlayer.Play();
+            };
         }
 
         private string GetVideoFileName(string coinType, int duration)
@@ -72,7 +77,9 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         private void VolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-
+            Slider slider = sender as Slider;
+            double volumeLevel = slider.Value / 10;
+            soundPlayer.Volume = volumeLevel;
         }
 
 
@@ -107,6 +114,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             string video = GetVideoFileName(coinType, duration);
 
             bool isHeads = (new Random().Next(2) == 0);
+            soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/coin_flip.wav");
             string result = isHeads ? "Heads" : "Tails";
 
             video = video.Replace("{result}", result);
@@ -120,6 +128,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             {
                 if (userGuessedHeads)
                 {
+                    soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/guess_correct.wav");
                     MessageDialog dialog = new MessageDialog("Well done! Your guess of heads was spot on!");
                     dialog.Commands.Add(new UICommand("Ok", null));
                     dialog.DefaultCommandIndex = 0;
@@ -128,6 +137,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
                 }
                 else
                 {
+                    soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/guess_wrong.mp3");
                     MessageDialog dialog = new MessageDialog("Oops! It's heads. Better luck next time!");
                     dialog.Commands.Add(new UICommand("Ok", null));
                     dialog.DefaultCommandIndex = 0;
@@ -139,6 +149,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             {
                 if (!userGuessedHeads)
                 {
+                    soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/guess_correct.wav");
                     MessageDialog dialog = new MessageDialog("You're right! It's tails. You have a good intuition!");
                     dialog.Commands.Add(new UICommand("Ok", null));
                     dialog.DefaultCommandIndex = 0;
@@ -147,6 +158,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
                 }
                 else
                 {
+                    soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/guess_wrong.mp3");
                     MessageDialog dialog = new MessageDialog("Hard luck! The coin flipped to tails this round.");
                     dialog.Commands.Add(new UICommand("Ok", null));
                     dialog.DefaultCommandIndex = 0;
@@ -170,6 +182,14 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
 
         
+        }
+
+        private void CoinFlipClicked(object sender, RoutedEventArgs e)
+        {
+            if (MenuSplitView.IsPaneOpen == true)
+            {
+                Frame.Navigate(typeof(MainPage));
+            }
         }
     }
 }

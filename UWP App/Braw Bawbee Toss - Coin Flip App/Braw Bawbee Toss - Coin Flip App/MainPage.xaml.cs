@@ -35,9 +35,8 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
     {
 
         private History historyPage;
-
-        private int headScore = 0;
-        private int tailScore = 0;
+        private int headScore = 0;    // Keeping score of how many times Heads showed up.  
+        private int tailScore = 0;    // Keeping score of how many times Tails showed up.  
 
 
 
@@ -46,14 +45,16 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             this.InitializeComponent();
 
             this.DataContext = this; // Set DataContext to the current instance of MainPage
-            ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
-            titleBar.BackgroundColor = Colors.Black;
+            ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar; // New Titlebar
+            titleBar.BackgroundColor = Colors.Black;    
             titleBar.ForegroundColor = Colors.White;
             titleBar.ButtonBackgroundColor = Colors.Black;
             titleBar.ButtonForegroundColor = Colors.White;
 
             historyPage = new History();
 
+
+            // Only thing that this wee block below does, is it plays video as soon as it is loaded.
 
             videoPlayer.MediaOpened += (s, args) =>
             {
@@ -64,6 +65,9 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         }
 
+
+        // Event handler 1
+        // This opens up menu pane, when the burger menu icon is clicked.
         private void MenuClicked(object sender, RoutedEventArgs e)
         {
             if (MenuSplitView.IsPaneOpen == false) 
@@ -80,14 +84,21 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         }
 
 
-
+        // Event handler 2
+        // This gets run everytime the user slides the volume slider.
+        // The volume of soundPlayer will depend on the volume slider's value.
         private void VolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {       
-        
+        {
+            Slider slider = sender as Slider;
+            double volumeLevel = slider.Value / 10;
+            soundPlayer.Volume = volumeLevel;
         }
 
 
-
+        // Function with correct parameter passing
+        // This function takes two parameters coinType, and duration.
+        // Then it concatenates the parameters with some trings to formulate the video file name.
+        // Which will help to choose the right video.
         private string GetVideoFileName(string coinType, int duration)
         {
             string baseVideoName = $"{coinType}-{duration}";
@@ -98,6 +109,9 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
             return fullVideoName;
         }
+        // Event handler 3
+        // This gets run when the user clicks the Flip History button in the pane menu.
+        // It just takes them to History Page.
 
         private void HistoryClicked(object sender, RoutedEventArgs e)
         {
@@ -109,8 +123,14 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             }
         }
 
+        // Event handler 4
+        // This gets run when the user clicks the Coin Flip button.
+
+
+
         private async void FlipCoin(object sender, RoutedEventArgs e)
         {
+            // Stuff for multipage databinding.
             string mode = "Coin Flip";
             int coinIndex = CoinComboBox.SelectedIndex;
             string coinType = "Gold";
@@ -136,6 +156,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             string result = isHeads ? "Heads" : "Tails";
 
             video = video.Replace("{result}", result);
+            soundPlayer.Play();
             videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}");
 
 

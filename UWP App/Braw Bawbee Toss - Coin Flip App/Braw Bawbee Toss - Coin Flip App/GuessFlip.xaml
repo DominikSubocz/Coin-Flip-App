@@ -40,7 +40,8 @@
             <MediaElement x:Name="videoPlayer" Source="assets\videos\Gold-1-Heads.mp4"
                           AutoPlay="false" AreTransportControlsEnabled="false"
                           Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2"/>
-            
+            <MediaElement x:Name="soundPlayer" Source="Assets/Sounds/coin_flip.wav" AutoPlay="False" IsLooping="False" />
+
             <!-- Used for testing -->
             <!--<TextBlock x:Name="resultTest" FontSize="64" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="5" Text="" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
 
@@ -104,10 +105,10 @@
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Padding="0 10 0 0">
-                        <Button FontSize="25" Height="50" Width="auto" Background="Transparent" Padding="0" HorizontalAlignment="Left">
+                        <Button FontSize="25" Height="50" Width="auto" Click="CoinFlipClicked" Background="Transparent" Padding="0" HorizontalAlignment="Left">
                             <StackPanel Orientation="Horizontal">
-                                <Image Source ="Assets\Icons\Star-Icon\star.svg" Width="40"/>
-                                <TextBlock Text="Try Your Luck" FontSize="16" VerticalAlignment="Center"/>
+                                <Image Source ="Assets\Icons\Coin-Icon\coin-icon.svg" Width="40"/>
+                                <TextBlock Text="Coin Flip" FontSize="16" VerticalAlignment="Center"/>
                             </StackPanel>
 
                         </Button>
@@ -137,11 +138,13 @@
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Padding="0 10 0 0">
                         <TextBlock Text="Volume" FontSize="16" VerticalAlignment="Center"/>
                         <Slider 
+                            Maximum="10"
+                            Value="10"
                             x:Name="volumeSlider" 
                             Width="130"
                             ValueChanged="VolumeChanged"/>
 
-                    </StackPanel>
+                    </StackPanel>                
                 </StackPanel>
             </SplitView.Pane>
         </SplitView>

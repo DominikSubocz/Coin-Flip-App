@@ -36,6 +36,8 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             historyItems = HistoryItems.ItemManager.AddItems();
             this.DataContext = this;
 
+
+
         }
 
 
@@ -44,7 +46,12 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         private void GuessClicked(object sender, RoutedEventArgs e)
         {
+            if (MenuSplitView.IsPaneOpen == true)
+            {
 
+                Frame.Navigate(typeof(GuessFlip), this);
+
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -54,6 +61,30 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             // Update your UI with the historyItems as needed
         }
 
+        private void CoinFlipClicked(object sender, RoutedEventArgs e)
+        {
+            if (MenuSplitView.IsPaneOpen == true)
+            {
+
+                Frame.Navigate(typeof(MainPage), this);
+
+            }
+        }
+
+        private void MenuClicked(object sender, RoutedEventArgs e)
+        {
+            if (MenuSplitView.IsPaneOpen == false)
+            {
+
+                MenuSplitView.IsPaneOpen = true;
+
+            }
+
+            else if (MenuSplitView.IsPaneOpen == true)
+            {
+                MenuSplitView.IsPaneOpen = false;
+            }
+        }
 
     }
 }

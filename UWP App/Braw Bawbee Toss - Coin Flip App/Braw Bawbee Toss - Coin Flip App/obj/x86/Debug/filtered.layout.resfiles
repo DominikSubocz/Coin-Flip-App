@@ -1,9 +1,13 @@
 WinMetadata\Windows.winmd
 Assets\Icons\Burger-Menu\burger.svg
 Assets\Icons\Close-Icon\close.svg
+Assets\Icons\Coin-Icon\coin-icon.svg
 Assets\Icons\History-Icon\history.svg
 Assets\Icons\Star-Icon\star.svg
 Assets\LockScreenLogo.scale-200.png
+Assets\Sounds\coin_flip.wav
+Assets\Sounds\guess_correct.wav
+Assets\Sounds\guess_wrong.mp3
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png

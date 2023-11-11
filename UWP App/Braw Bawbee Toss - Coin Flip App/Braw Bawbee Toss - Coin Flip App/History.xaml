@@ -11,18 +11,105 @@ xmlns:data="using:Braw_Bawbee_Toss___Coin_Flip_App.Assets.Models"
 
     <!-- In History.xaml -->
     <Grid>
-        <GridView ItemsSource="{x:Bind historyItems}" Grid.Row="1" Grid.Column="1">
-            <GridView.ItemTemplate>
-                <DataTemplate x:DataType="data:HistoryItems">
-                    <StackPanel>
-                        <TextBlock FontSize="16" Text="{x:Bind CoinType}"/>
-                        <TextBlock FontSize="16" Text="{x:Bind Mode}"/>
-                        <TextBlock FontSize="16" Text="{x:Bind Result}"/>
-                        <TextBlock FontSize="16" Text="{x:Bind Duration}"/>
+        <Grid x:Name="MainContent" Background="Red">
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="75"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <Rectangle Fill="gray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" />
+            <ListView x:Name="HistoryListView" Grid.Row="1" Grid.Column="1" Background="AliceBlue" Grid.ColumnSpan="6" Margin="10">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="data:HistoryItems">
+                        <StackPanel>
+                            <!-- First StackPanel for the main content -->
+                            <StackPanel>
+                                <TextBlock Text="{Binding CoinType}" />
+                                <TextBlock Text="{Binding Mode}" />
+                                <TextBlock Text="{Binding Result}" />
+                                <TextBlock Text="{Binding Duration}" />
+                            </StackPanel>
+
+                            <!-- Second StackPanel for additional information -->
+                            <StackPanel Margin="0,10,0,0">
+                                <!-- Add more TextBlock elements as needed -->
+                                <TextBlock Text="Additional Info 1: {Binding AdditionalInfo1}" />
+                                <TextBlock Text="Additional Info 2: {Binding AdditionalInfo2}" />
+
+                                <!-- Static TextBlock without binding -->
+                                <TextBlock Text="Static Text: This is a static message" />
+                            </StackPanel>
+                        </StackPanel>
+
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button Click="MenuClicked" Grid.Column="7" Background="Transparent"  HorizontalAlignment="Right" VerticalAlignment="Top">
+                <Image Source ="Assets\Icons\Burger-Menu\burger.svg" Width="70"/>
+            </Button>
+        </Grid>
+        <SplitView  x:Name="MenuSplitView" DisplayMode="Overlay" IsPaneOpen="False" CompactPaneLength="40" OpenPaneLength="175" PanePlacement="Right">
+            <SplitView.Pane>
+                <StackPanel Background="Gray">
+
+                    <Button Click="MenuClicked" Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Top">
+                        <Image Source ="Assets\Icons\Close-Icon\close.svg" Width="70"/>
+                    </Button>
+                    <StackPanel Orientation="Horizontal" Padding="0 10 0 0">
+                        <Button FontSize="25" Height="50" Width="auto" Background="Transparent" Padding="0" HorizontalAlignment="Left" Click="CoinFlipClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source ="Assets\Icons\Coin-Icon\coin-icon.svg" Width="40"/>
+                                <TextBlock Text="Coin Flip" FontSize="16" VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                        </Button>
                     </StackPanel>
-                </DataTemplate>
-            </GridView.ItemTemplate>
-        </GridView>
+
+                    <StackPanel Orientation="Horizontal" Padding="0 10 0 0">
+                        <Button FontSize="25" Height="50" Width="auto" Background="Transparent" Padding="0" HorizontalAlignment="Left" Click="GuessClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source ="Assets\Icons\Star-Icon\star.svg" Width="40"/>
+                                <TextBlock Text="Guess Mode" FontSize="16" VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                        </Button>
+                    </StackPanel>
+
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+
+
     </Grid>
+
 
 </Page>
