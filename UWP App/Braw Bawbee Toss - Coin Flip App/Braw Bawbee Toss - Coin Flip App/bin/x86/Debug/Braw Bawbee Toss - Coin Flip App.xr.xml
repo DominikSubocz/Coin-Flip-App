@@ -103,6 +103,7 @@
       <RootProperty Name="AutoPlay" />
       <RootProperty Name="AreTransportControlsEnabled" />
       <RootProperty Name="IsLooping" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Braw_Bawbee_Toss___Coin_Flip_App.GuessFlip" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">

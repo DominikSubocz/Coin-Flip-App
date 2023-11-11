@@ -58,17 +58,41 @@
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Sounds\guess_wrong.mp3">
       <PackagePath>Assets\Sounds\guess_wrong.mp3</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Bronze-1-Heads.mp4">
+      <PackagePath>Assets\Videos\Bronze-1-Heads.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Bronze-1-Tails.mp4">
+      <PackagePath>Assets\Videos\Bronze-1-Tails.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Bronze-2-Heads.mp4">
+      <PackagePath>Assets\Videos\Bronze-2-Heads.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Bronze-2-Tails.mp4">
+      <PackagePath>Assets\Videos\Bronze-2-Tails.mp4</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Gold-1-Heads.mp4">
       <PackagePath>Assets\Videos\Gold-1-Heads.mp4</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\GH-2S.mp4">
-      <PackagePath>Assets\Videos\GH-2S.mp4</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Gold-1-Tails.mp4">
       <PackagePath>Assets\Videos\Gold-1-Tails.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\GT-2S.mp4">
-      <PackagePath>Assets\Videos\GT-2S.mp4</PackagePath>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Gold-2-Heads.mp4">
+      <PackagePath>Assets\Videos\Gold-2-Heads.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Gold-2-Tails.mp4">
+      <PackagePath>Assets\Videos\Gold-2-Tails.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Silver-1-Heads.mp4">
+      <PackagePath>Assets\Videos\Silver-1-Heads.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Silver-1-Tails.mp4">
+      <PackagePath>Assets\Videos\Silver-1-Tails.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Silver-2-Heads.mp4">
+      <PackagePath>Assets\Videos\Silver-2-Heads.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Assets\Videos\Silver-2-Tails.mp4">
+      <PackagePath>Assets\Videos\Silver-2-Tails.mp4</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\UWP App\Braw Bawbee Toss - Coin Flip App\Braw Bawbee Toss - Coin Flip App\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

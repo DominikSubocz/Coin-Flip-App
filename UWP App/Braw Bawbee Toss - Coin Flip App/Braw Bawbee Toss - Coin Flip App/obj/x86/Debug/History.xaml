@@ -87,7 +87,7 @@ xmlns:data="using:Braw_Bawbee_Toss___Coin_Flip_App.Assets.Models"
                     <StackPanel Orientation="Horizontal" Padding="0 10 0 0">
                         <Button x:ConnectionId='6' FontSize="25" Height="50" Width="auto" Background="Transparent" Padding="0" HorizontalAlignment="Left"                        >
                             <StackPanel Orientation="Horizontal">
-                                <Image Source ="Assets\Icons\History-Icon\history.svg" Width="40"/>
+                                <Image Source ="Assets\Icons\Coin-Icon\coin-icon.svg" Width="40"/>
                                 <TextBlock Text="Coin Flip" FontSize="16" VerticalAlignment="Center"/>
                             </StackPanel>
 
