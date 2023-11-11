@@ -46,11 +46,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         public MainPage()
         {
             this.InitializeComponent();
-            this.InitializeComponent();
-            this.InitializeComponent();
-            this.InitializeComponent();
-            historyItems = new List<HistoryItems>();
-            HistoryListView.ItemsSource = historyItems;
+
             ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar; // New Titlebar
             titleBar.BackgroundColor = Colors.Black;    
             titleBar.ForegroundColor = Colors.White;
@@ -71,22 +67,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         }
 
-        private void AddToHistory(string coinType, int duration, string mode, string result)
-        {
-            HistoryItems newItem = new HistoryItems
-            {
-                CoinType = coinType,
-                Duration = duration,
-                Mode = mode,
-                Result = result
-            };
-
-            // Add the new item to the List
-            historyItems.Insert(0, newItem);
-
-            // Clear the selection to ensure the ListView updates
-            HistoryListView.SelectedItem = null;
-        }
+ 
 
 
 
@@ -154,68 +135,93 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
         private async void FlipCoin(object sender, RoutedEventArgs e)
         {
-            // Stuff for multipage databinding.
-            string mode = "Coin Flip";
-            int coinIndex = CoinComboBox.SelectedIndex;
-            string coinType = "Gold";
-            switch (coinIndex)
+
+            if (DynamicStackPanel != null)
             {
-                case 0:
-                    coinType = "Gold";
-                    break;
-                case 1:
-                    coinType = "Silver";
-                    break;
-                case 2:
-                    coinType = "Bronze";
-                    break;
+                // Stuff for multipage databinding.
+                string mode = "Coin Flip";
+                int coinIndex = CoinComboBox.SelectedIndex;
+                string coinType = "Gold";
+                switch (coinIndex)
+                {
+                    case 0:
+                        coinType = "Gold";
+                        break;
+                    case 1:
+                        coinType = "Silver";
+                        break;
+                    case 2:
+                        coinType = "Bronze";
+                        break;
+
+                }
+
+                int duration = (int)durationSlider.Value;
+
+                string video = GetVideoFileName(coinType, duration);
+
+                bool isHeads = (new Random().Next(2) == 0);
+                string result = isHeads ? "Heads" : "Tails";
+
+                video = video.Replace("{result}", result);
+                soundPlayer.Play();
+                videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}");
+
+
+                StackPanel newPanel = new StackPanel();
+
+                // Add TextBlocks to the new StackPanel
+                TextBlock coinTypeTextBlock = new TextBlock();
+                coinTypeTextBlock.Text = "Coin Type: " + coinType;
+                newPanel.Children.Add(coinTypeTextBlock);
+
+                TextBlock durationTextBlock = new TextBlock();
+                durationTextBlock.Text = "Duration: " + duration.ToString();
+                newPanel.Children.Add(durationTextBlock);
+
+                TextBlock modeTextBlock = new TextBlock();
+                modeTextBlock.Text = "Mode: " + mode;
+                newPanel.Children.Add(modeTextBlock);
+
+                TextBlock resultTextBlock = new TextBlock();
+                resultTextBlock.Text = "Result: " + result;
+                newPanel.Children.Add(resultTextBlock);
+
+                // Add the new StackPanel to the existing StackPanel
+                DynamicStackPanel.Children.Insert(0, newPanel);
+
+
+
+                if (isHeads)
+                {
+
+                    headScore++;
+                    videoPlayer.Play();
+
+                }
+
+                else
+                {
+                    tailScore++;
+                    videoPlayer.Play();
+
+
+
+                }
+
+
+                FlipBtn.IsEnabled = false;
+                FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);
+
+                await Task.Delay(TimeSpan.FromSeconds(duration));
+
+
+                FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);
+                FlipBtn.IsEnabled = true;
+                HeadsScoreTextBlock.Text = headScore.ToString();
+                TailsScoreTextBlock.Text = tailScore.ToString();
 
             }
-
-            int duration = (int)durationSlider.Value;
-
-            string video = GetVideoFileName(coinType, duration);
-            
-            bool isHeads = (new Random().Next(2) == 0);
-            string result = isHeads ? "Heads" : "Tails";
-
-            video = video.Replace("{result}", result);
-            soundPlayer.Play();
-            videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}");
-
-            AddToHistory(coinType, duration, mode, result);
-
-
-
-
-            if (isHeads)
-            {
-
-                headScore++;
-                videoPlayer.Play();
-
-            }
-
-            else
-            {
-                tailScore++;
-                videoPlayer.Play();
-
-
-
-            }
-
-
-            FlipBtn.IsEnabled = false;
-            FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);
-
-            await Task.Delay(TimeSpan.FromSeconds(duration));
-
-
-            FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);
-            FlipBtn.IsEnabled = true;
-            HeadsScoreTextBlock.Text = headScore.ToString();
-            TailsScoreTextBlock.Text = tailScore.ToString();
 
 
         }

@@ -32,18 +32,9 @@
             </Grid.RowDefinitions>
 
 
-            <ListView x:Name="HistoryListView">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="data:HistoryItems">
-                        <StackPanel>
-                            <TextBlock Text="{x:Bind CoinType}" />
-                            <TextBlock Text="{x:Bind Mode}" />
-                            <TextBlock Text="{x:Bind Result}" />
-                            <TextBlock Text="{x:Bind Duration}" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <StackPanel x:Name="DynamicStackPanel" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Margin="10">
+                <!-- Existing StackPanels or other UI elements can be here -->
+            </StackPanel>
 
             <Rectangle Fill="gray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" />
 

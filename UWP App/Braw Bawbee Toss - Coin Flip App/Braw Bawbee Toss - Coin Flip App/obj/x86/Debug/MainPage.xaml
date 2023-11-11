@@ -32,18 +32,9 @@
             </Grid.RowDefinitions>
 
 
-            <ListView x:ConnectionId='10' x:Name="HistoryListView">
-                <ListView.ItemTemplate>
-                    <DataTemplate                               >
-                        <StackPanel x:ConnectionId='18'>
-                            <TextBlock x:ConnectionId='19'                          />
-                            <TextBlock x:ConnectionId='20'                      />
-                            <TextBlock x:ConnectionId='21'                        />
-                            <TextBlock x:ConnectionId='22'                          />
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <StackPanel x:ConnectionId='10' x:Name="DynamicStackPanel" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Margin="10">
+                <!-- Existing StackPanels or other UI elements can be here -->
+            </StackPanel>
 
             <Rectangle Fill="gray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" />
 
