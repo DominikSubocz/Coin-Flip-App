@@ -33,7 +33,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         public History()
         {
             this.InitializeComponent();
-            historyItems = HistoryItems.ItemManager.AddItems();
+            historyItems = HistoryItems.ItemManager.GetHistoryItems();
             this.DataContext = this;
 
 

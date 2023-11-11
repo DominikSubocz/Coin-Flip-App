@@ -5,6 +5,7 @@
     xmlns:local="using:Braw_Bawbee_Toss___Coin_Flip_App"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:Braw_Bawbee_Toss___Coin_Flip_App.Assets.Models"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -30,6 +31,19 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
+
+            <ListView x:Name="HistoryListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="data:HistoryItems">
+                        <StackPanel>
+                            <TextBlock Text="{x:Bind CoinType}" />
+                            <TextBlock Text="{x:Bind Mode}" />
+                            <TextBlock Text="{x:Bind Result}" />
+                            <TextBlock Text="{x:Bind Duration}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
             <Rectangle Fill="gray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" />
 

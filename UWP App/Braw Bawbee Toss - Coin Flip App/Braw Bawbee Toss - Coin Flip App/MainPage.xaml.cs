@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Braw_Bawbee_Toss___Coin_Flip_App.Assets.Models;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -6,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Windows.Devices.Enumeration;
 using Windows.Foundation;
@@ -20,6 +22,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using static Braw_Bawbee_Toss___Coin_Flip_App.Assets.Models.HistoryItems;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -37,14 +40,17 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
         private History historyPage;
         private int headScore = 0;    // Keeping score of how many times Heads showed up.  
         private int tailScore = 0;    // Keeping score of how many times Tails showed up.  
-
+        private List<HistoryItems> historyItems;
 
 
         public MainPage()
         {
             this.InitializeComponent();
-
-            this.DataContext = this; // Set DataContext to the current instance of MainPage
+            this.InitializeComponent();
+            this.InitializeComponent();
+            this.InitializeComponent();
+            historyItems = new List<HistoryItems>();
+            HistoryListView.ItemsSource = historyItems;
             ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar; // New Titlebar
             titleBar.BackgroundColor = Colors.Black;    
             titleBar.ForegroundColor = Colors.White;
@@ -64,6 +70,24 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
 
 
         }
+
+        private void AddToHistory(string coinType, int duration, string mode, string result)
+        {
+            HistoryItems newItem = new HistoryItems
+            {
+                CoinType = coinType,
+                Duration = duration,
+                Mode = mode,
+                Result = result
+            };
+
+            // Add the new item to the List
+            historyItems.Insert(0, newItem);
+
+            // Clear the selection to ensure the ListView updates
+            HistoryListView.SelectedItem = null;
+        }
+
 
 
         // Event handler 1
@@ -159,6 +183,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             soundPlayer.Play();
             videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}");
 
+            AddToHistory(coinType, duration, mode, result);
 
 
 
@@ -185,12 +210,6 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);
 
             await Task.Delay(TimeSpan.FromSeconds(duration));
-            // Assume you have flip results
-
-
-
-            // Access the HistoryService and add the information
-            HistoryService.Instance.AddHistoryItem(coinType, duration, mode, result);
 
 
             FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);

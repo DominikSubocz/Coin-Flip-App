@@ -19,7 +19,7 @@ namespace Braw_Bawbee_Toss___Coin_Flip_App.Assets.Models
 
         public class ItemManager
         {
-            public static List<HistoryItems> AddItems()
+            public static List<HistoryItems> GetHistoryItems()
             {
                 var items = new List<HistoryItems>();
 
