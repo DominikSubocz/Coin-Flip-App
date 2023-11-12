@@ -30,13 +30,13 @@
     <AppXManifest Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-12T14:19:18.041</Modified>
+      <Modified>2023-11-12T14:27:44.893</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.exe">
       <PackagePath>entrypoint\CoinFlipApp.exe</PackagePath>
-      <Modified>2023-11-12T14:19:16.692</Modified>
+      <Modified>2023-11-12T14:27:44.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -65,6 +65,14 @@
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Star Icon\star.svg">
       <PackagePath>Assets\Icons\Star Icon\star.svg</PackagePath>
       <Modified>2023-11-12T14:00:46.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Time-Icon\time.svg">
+      <PackagePath>Assets\Icons\Time-Icon\time.svg</PackagePath>
+      <Modified>2023-11-12T14:27:29.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Volume-Icon\volume.svg">
+      <PackagePath>Assets\Icons\Volume-Icon\volume.svg</PackagePath>
+      <Modified>2023-11-12T14:26:24.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\coin_flip.wav">
       <PackagePath>Assets\Sounds\coin_flip.wav</PackagePath>
@@ -166,19 +174,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.xr.xml">
       <PackagePath>CoinFlipApp.xr.xml</PackagePath>
-      <Modified>2023-11-12T14:19:16.620</Modified>
+      <Modified>2023-11-12T14:27:44.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-11-12T14:19:16.638</Modified>
+      <Modified>2023-11-12T14:27:44.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\GuessFlip.xbf">
       <PackagePath>GuessFlip.xbf</PackagePath>
-      <Modified>2023-11-12T14:19:16.636</Modified>
+      <Modified>2023-11-12T14:27:44.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-11-12T14:19:16.637</Modified>
+      <Modified>2023-11-12T14:27:44.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.20348.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -186,11 +194,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-12T14:19:17.120</Modified>
+      <Modified>2023-11-12T14:27:44.562</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\Core\CoinFlipApp.exe">
       <PackagePath>CoinFlipApp.exe</PackagePath>
-      <Modified>2023-11-12T14:19:18.033</Modified>
+      <Modified>2023-11-12T14:27:44.891</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

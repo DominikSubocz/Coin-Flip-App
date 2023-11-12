@@ -49,6 +49,12 @@
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Star Icon\star.svg">
       <PackagePath>Assets\Icons\Star Icon\star.svg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Time-Icon\time.svg">
+      <PackagePath>Assets\Icons\Time-Icon\time.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Volume-Icon\volume.svg">
+      <PackagePath>Assets\Icons\Volume-Icon\volume.svg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\coin_flip.wav">
       <PackagePath>Assets\Sounds\coin_flip.wav</PackagePath>
     </AppxPackagedFile>

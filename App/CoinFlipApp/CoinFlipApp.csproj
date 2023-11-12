@@ -139,6 +139,8 @@
     <Content Include="Assets\Icons\Coin-Icon\coin-icon.svg" />
     <Content Include="Assets\Icons\History-Icon\history.svg" />
     <Content Include="Assets\Icons\Star Icon\star.svg" />
+    <Content Include="Assets\Icons\Time-Icon\time.svg" />
+    <Content Include="Assets\Icons\Volume-Icon\volume.svg" />
     <Content Include="Assets\Sounds\coin_flip.wav" />
     <Content Include="Assets\Sounds\guess_correct.wav" />
     <Content Include="Assets\Sounds\guess_wrong.mp3" />
