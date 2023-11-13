@@ -21,7 +21,11 @@ using Windows.UI.Xaml.Navigation;
 namespace CoinFlipApp
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// The MainPage containts various methods repsonsible for the main Coin Flip mode.
+    /// 
+    /// <param name="headScore"> Hold information on how many times Heads flipped.</param>
+    /// <param name="tailScore">Hold information on how many times Tails flipped.</param>
+    /// 
     /// </summary>
     public sealed partial class MainPage : Page
     {
