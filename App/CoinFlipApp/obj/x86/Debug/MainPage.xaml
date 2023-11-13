@@ -41,30 +41,30 @@
             <Rectangle Fill="DarkGray" Grid.Row="3" Grid.Column="2" Height="90" VerticalAlignment="Top" Margin="0 50 0 0"  RadiusX="20" RadiusY="50"/>
             <Rectangle Fill="DarkGray" Grid.Row="3" Grid.Column="5" Height="90" VerticalAlignment="Top" Margin="0 50 0 0"  RadiusX="20" RadiusY="50"/>
 
-            <ListView x:ConnectionId='10'                                        Grid.Row="1" Grid.Column="1">
+            <ListView x:ConnectionId='9'                                        Grid.Row="1" Grid.Column="1">
                 <ListView.ItemTemplate>
                     <DataTemplate                              >
-                        <StackPanel x:ConnectionId='18'>
-                            <TextBlock x:ConnectionId='19'                          />
-                            <TextBlock x:ConnectionId='20'                      />
-                            <TextBlock x:ConnectionId='21'                        />
-                            <TextBlock x:ConnectionId='22'                          />
+                        <StackPanel x:ConnectionId='17'>
+                            <TextBlock x:ConnectionId='18'                          />
+                            <TextBlock x:ConnectionId='19'                      />
+                            <TextBlock x:ConnectionId='20'                        />
+                            <TextBlock x:ConnectionId='21'                          />
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
 
-            <MediaElement x:ConnectionId='11' x:Name="videoPlayer" Source="assets\videos\Gold-1-Heads.mp4"
+            <MediaElement x:ConnectionId='10' x:Name="videoPlayer" Source="assets\videos\Gold-1-Heads.mp4"
                           AutoPlay="false" AreTransportControlsEnabled="false"
                           Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Margin="0,0,10,5"/>
 
-            <MediaElement x:ConnectionId='12' x:Name="soundPlayer" Source="Assets/Sounds/coin_flip.wav" AutoPlay="False" IsLooping="False" />
+            <MediaElement x:ConnectionId='11' x:Name="soundPlayer" Source="Assets/Sounds/coin_flip.wav" AutoPlay="False" IsLooping="False" />
 
             <!-- Used for testing -->
             <!--<TextBlock x:Name="resultTest" FontSize="64" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="5" Text="" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
 
-            <TextBlock x:ConnectionId='13' x:Name="HeadsScoreTextBlock" FontSize="64" Grid.Column="2" Grid.Row="3" Text="0 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
-            <TextBlock x:ConnectionId='14' x:Name="TailsScoreTextBlock" FontSize="64" Foreground="White" Grid.Column="5" Grid.Row="3" Text="0 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
+            <TextBlock x:ConnectionId='12' x:Name="HeadsScoreTextBlock" FontSize="64" Grid.Column="2" Grid.Row="3" Text="0 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
+            <TextBlock x:ConnectionId='13' x:Name="TailsScoreTextBlock" FontSize="64" Foreground="White" Grid.Column="5" Grid.Row="3" Text="0 " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 70"/>
 
             <TextBlock FontSize="84" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="0" Text="Coin Flip" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
 
@@ -77,7 +77,7 @@
 
 
 
-            <Button x:ConnectionId='15' 
+            <Button x:ConnectionId='14' 
                 x:Name="FlipBtn"
                 Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="3" 
                 Background="White" Width="200" Height="110" Content="Toss a Cooin" FontSize="24"
@@ -91,7 +91,7 @@
 
 
 
-            <Button x:ConnectionId='16'                     Grid.Column="7" Background="Transparent"  HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button x:ConnectionId='15'                     Grid.Column="7" Background="Transparent"  HorizontalAlignment="Right" VerticalAlignment="Top">
                 <Image Source ="Assets\Icons\Burger-Menu\burger.svg" Width="70"/>
             </Button>
         </Grid>
@@ -102,15 +102,7 @@
                     <Button x:ConnectionId='4'                     Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Top">
                         <Image Source ="Assets\Icons\Close-Icon\close.svg" Width="70"/>
                     </Button>
-                    <StackPanel Orientation="Horizontal" Padding="0 10 0 0">
-                        <Button x:ConnectionId='9' FontSize="25" Height="50" Width="auto" Background="Transparent" Padding="0" HorizontalAlignment="Left"                       >
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source ="Assets\Icons\History-Icon\history.svg" Width="40"/>
-                                <TextBlock Text="Flip History" FontSize="16" VerticalAlignment="Center"/>
-                            </StackPanel>
 
-                        </Button>
-                    </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Padding="0 10 0 0">
                         <Button x:ConnectionId='8' FontSize="25" Height="50" Width="auto" Background="Transparent" Padding="0" HorizontalAlignment="Left"                     >
@@ -139,8 +131,11 @@
 
 
                     <StackPanel Orientation="Vertical"  HorizontalAlignment="Center" Padding="0 10 0 0" >
-                        <Image Source ="Assets\Icons\Volume-Icon\volume.svg" Width="40" VerticalAlignment="Top"/>
-                        <TextBlock Text="Flip Duration" FontSize="16" VerticalAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source ="Assets\Icons\Volume-Icon\volume.svg" Width="40" VerticalAlignment="Top"/>
+                            <TextBlock Text="Flip Duration" FontSize="16" VerticalAlignment="Center"/>
+                        </StackPanel>
+
                         <Slider x:ConnectionId='6' 
                             x:Name="durationSlider" 
                             Width="130"
@@ -151,8 +146,11 @@
                     </StackPanel>
 
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Padding="0 10 0 0">
-                        <Image Source ="Assets\Icons\Time-Icon\time.svg" Width="40" VerticalAlignment="Top"/>
-                        <TextBlock Text="Volume" FontSize="16" VerticalAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source ="Assets\Icons\Time-Icon\time.svg" Width="40" VerticalAlignment="Top"/>
+                            <TextBlock Text="Volume" FontSize="16" VerticalAlignment="Center"/>
+                        </StackPanel>
+
                         <Slider x:ConnectionId='5' 
                             Maximum="10"
                             Value="10"
