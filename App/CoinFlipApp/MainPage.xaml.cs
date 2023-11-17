@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Collections.ObjectModel;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -33,13 +34,13 @@ namespace CoinFlipApp
         //private History historyPage;
         private int headScore = 0;    // Keeping score of how many times Heads showed up.  
         private int tailScore = 0;    // Keeping score of how many times Tails showed up.  
-        public List<HistoryItem> coinFlipHistory;
+        public ObservableCollection <HistoryItem> coinFlipHistory;
 
 
         public MainPage()
         {
             this.InitializeComponent();
-            coinFlipHistory = new List<HistoryItem>();
+            coinFlipHistory = new ObservableCollection<HistoryItem>();
 
             ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar; // New Titlebar
             titleBar.BackgroundColor = Colors.Black;

@@ -122,7 +122,7 @@
 
                     <StackPanel Orientation="Vertical"  HorizontalAlignment="Center" Padding="0 10 0 0" >
                         <StackPanel Orientation="Horizontal">
-                            <Image Source ="Assets\Icons\Volume-Icon\volume.svg" Width="40" VerticalAlignment="Top"/>
+                            <Image Source ="Assets\Icons\Time-Icon\time.svg" Width="40" VerticalAlignment="Top"/>
                             <TextBlock Text="Flip Duration" FontSize="16" VerticalAlignment="Center"/>
                         </StackPanel>
 
@@ -131,13 +131,13 @@
                             Width="130"
                             StepFrequency="1"
                             Value="1"
-                            Minimum="0"
-                            Maximum="5"/>
+                            Minimum="1"
+                            Maximum="2"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Padding="0 10 0 0">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source ="Assets\Icons\Time-Icon\time.svg" Width="40" VerticalAlignment="Top"/>
+                            <Image Source ="Assets\Icons\Volume-Icon\volume.svg" Width="40" VerticalAlignment="Top"/>
                             <TextBlock Text="Volume" FontSize="16" VerticalAlignment="Center"/>
                         </StackPanel>
 
