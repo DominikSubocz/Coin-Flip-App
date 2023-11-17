@@ -11,6 +11,7 @@ namespace CoinFlipApp
         public string CoinType { get; set; }
         public int Duration { get; set; }
         public string Result { get; set; }
+        public string Guessed { get; set; }
         public string Mode { get; set; }
     }
 }

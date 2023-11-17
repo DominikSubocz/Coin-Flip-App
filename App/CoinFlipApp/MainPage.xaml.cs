@@ -147,7 +147,8 @@ namespace CoinFlipApp
                 CoinType = coinType,
                 Duration = duration,
                 Mode = mode,
-                Result = result
+                Result = result,
+                Guessed = "N/A"
             };
 
             // Add it to the history list (not working).
@@ -184,8 +185,20 @@ namespace CoinFlipApp
 
         private void GuessClicked(object sender, RoutedEventArgs e)
         {
-           Frame.Navigate(typeof(GuessFlip));   // Navigate to GuessFlip Page.
+            Frame.Navigate(typeof(GuessFlip), coinFlipHistory);
 
+        }
+
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (e.Parameter is ObservableCollection<HistoryItem>)
+            {
+                ObservableCollection<HistoryItem> receivedCollection = (ObservableCollection<HistoryItem>)e.Parameter;
+
+                // Assign the received collection to your local ObservableCollection
+                coinFlipHistory = receivedCollection;
+            }
         }
     }
 }
