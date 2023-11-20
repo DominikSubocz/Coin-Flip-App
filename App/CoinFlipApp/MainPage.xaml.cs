@@ -93,11 +93,11 @@ namespace CoinFlipApp
         // Function: Generate video file name based on coinType and duration.
         // Just basic concatenation of parameters which will form a full video name.
         // It just basically picks the right video.
-        private string GetVideoFileName(string coinType, int duration)
+        private string GetVideoFileName(string coinType, int duration, string result)
         {
-            string baseVideoName = $"{coinType}-{duration}";    
+            string baseVideoName = $"{coinType}-{duration}";
 
-            string resultPlaceholder = "{result}";
+            string resultPlaceholder = result;
 
             string fullVideoName = $"{baseVideoName}-{resultPlaceholder}.mp4";
 
@@ -132,10 +132,11 @@ namespace CoinFlipApp
 
             int duration = (int)durationSlider.Value;   // Hold value of how long the coin will flip for. Kind of a delay.
 
-            string video = GetVideoFileName(coinType, duration);    // Get the right video based on picked settings.
 
             bool isHeads = (new Random().Next(2) == 0);     // Random number between 0 & 1. (False or True).
             string result = isHeads ? "Heads" : "Tails";    // Short way of writing if else. 0 = Heads, 1 = Tails.
+
+            string video = GetVideoFileName(coinType, duration, result);
 
             video = video.Replace("{result}", result);      // Video replacement.
             soundPlayer.Play();                             // Play SFX.
@@ -199,6 +200,39 @@ namespace CoinFlipApp
                 // Assign the received collection to your local ObservableCollection
                 coinFlipHistory = receivedCollection;
             }
+        }
+
+        private void coinSelected(object sender, SelectionChangedEventArgs e)
+        {
+            // Get the selected coin type
+            int coinIndex = CoinComboBox.SelectedIndex;
+            string coinType = "Gold"; // Default to Gold
+            switch (coinIndex)
+            {
+                case 0:
+                    coinType = "Gold";
+                    break;
+                case 1:
+                    coinType = "Silver";
+                    break;
+                case 2:
+                    coinType = "Bronze";
+                    break;
+            }
+
+            // Get the selected duration
+            int duration = 1; // 1 by default
+            if (durationSlider != null)
+            {
+                duration = (int)durationSlider.Value;
+            }
+
+
+            // Get the video file name based on the selected coin type and duration
+            string video = GetVideoFileName(coinType, duration, "Heads"); // Run constructor (Heads won't affect score)
+
+            // Update the videoPlayer source
+            videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}"); // Change video source
         }
     }
 }

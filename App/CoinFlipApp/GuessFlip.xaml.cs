@@ -31,6 +31,13 @@ namespace CoinFlipApp
         // Observable collection, a list that can be updated when running the app
         public ObservableCollection<HistoryItem> coinFlipHistory;
 
+        public double volume;
+
+        public string coinType;
+
+        public string result;
+
+        public string duration;
 
         public GuessFlip()
         {
@@ -85,8 +92,8 @@ namespace CoinFlipApp
         private void VolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
             Slider slider = sender as Slider;
-            double volumeLevel = slider.Value / 10;
-            soundPlayer.Volume = volumeLevel;
+            volume = slider.Value / 10;
+            soundPlayer.Volume = volume;
         }
 
 

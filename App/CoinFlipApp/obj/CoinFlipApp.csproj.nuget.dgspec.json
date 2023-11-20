@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj": {}
+    "F:\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj": {
+    "F:\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj",
+        "projectUniqueName": "F:\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj",
         "projectName": "CoinFlipApp",
-        "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj",
-        "packagesPath": "C:\\Users\\1742914\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\obj\\",
+        "projectPath": "F:\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj",
+        "packagesPath": "C:\\Users\\stasi\\.nuget\\packages\\",
+        "outputPath": "F:\\Coin-Flip-App\\App\\CoinFlipApp\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\1742914\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\stasi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

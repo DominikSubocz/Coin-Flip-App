@@ -167,7 +167,7 @@
 
                         </StackPanel>
 
-                        <ComboBox HorizontalAlignment="Center" x:Name="CoinComboBox" SelectedIndex="0">
+                        <ComboBox SelectionChanged="coinSelected" HorizontalAlignment="Center" x:Name="CoinComboBox" SelectedIndex="0">
                             <ComboBoxItem Content="Gold"/>
                             <ComboBoxItem Content="Silver"/>
                             <ComboBoxItem Content="Bronze"/>
