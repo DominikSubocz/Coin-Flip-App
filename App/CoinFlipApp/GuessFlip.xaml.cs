@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoinFlipApp.Assets;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -39,9 +40,17 @@ namespace CoinFlipApp
 
         public string duration;
 
+        private FlipMaster coinFlipMaster;
+
+        private VideoMaster video;
+
+
         public GuessFlip()
         {
             this.InitializeComponent();
+            coinFlipMaster = new FlipMaster();
+            video = new VideoMaster();
+
             coinFlipHistory = new ObservableCollection<HistoryItem>();
 
             // As soon as the video player loads the file it will play.
@@ -98,117 +107,6 @@ namespace CoinFlipApp
 
 
         // Guess method
-        private async void FlipGuess(object sender, RoutedEventArgs e)
-        {
-            bool guessed = false; // Default state 
-
-            GuessTailsBtn.IsEnabled = false; // Disable button
-            GuessTailsBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray); // Shows user the button is disabled
-            GuessHeadsBtn.IsEnabled = false;// Disable button
-            GuessHeadsBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);// Shows user the button is disabled
-
-            string mode = "Guess The Flip";  // Current gamemode.
-            int coinIndex = CoinComboBox.SelectedIndex; // Get the choice
-            string coinType = "Gold"; // By default gold
-                                      // Basic switch statement that switches coin types based on index value
-            switch (coinIndex)
-            {
-                case 0:
-                    coinType = "Gold";
-                    break;
-                case 1:
-                    coinType = "Silver";
-                    break;
-                case 2:
-                    coinType = "Bronze";
-                    break;
-            }
-            // Duration value, based on sliders value
-            int duration = (int)durationSlider.Value;
-
-            bool isHeads = (new Random().Next(2) == 0); // Random result between 0 & 1, false or true
-            soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/coin_flip.wav"); // Play the flip sound
-            string result = isHeads ? "Heads" : "Tails";    // Short version of else if statement
-
-            // Get the video file name based on the selected coin type and duration
-            string video = GetVideoFileName(coinType, duration, result);
-
-            // Update the videoPlayer source
-            videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}");
-
-            await Task.Delay(TimeSpan.FromSeconds(duration)); // Delay based on the delay value
-
-            bool userGuessedHeads = ((sender as Button) == GuessHeadsBtn); // Idk
-
-            // Basic if statement
-            // It checks if the user has guessed or not
-            // Displays appropiate pop up depending on the outcome
-            if (isHeads)
-            {
-                if (userGuessedHeads)
-                {
-                    soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/guess_correct.wav");
-                    MessageDialog dialog = new MessageDialog("Well done! Your guess of heads was spot on!");
-                    dialog.Commands.Add(new UICommand("Ok", null));
-                    dialog.DefaultCommandIndex = 0;
-                    dialog.CancelCommandIndex = 1;
-                    var cmd = await dialog.ShowAsync();
-                }
-                else
-                {
-                    soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/guess_wrong.mp3");
-                    MessageDialog dialog = new MessageDialog("Oops! It's heads. Better luck next time!");
-                    dialog.Commands.Add(new UICommand("Ok", null));
-                    dialog.DefaultCommandIndex = 0;
-                    dialog.CancelCommandIndex = 1;
-                    var cmd = await dialog.ShowAsync();
-                }
-            }
-            else
-            {
-                // It checks if the user has guessed or not
-                // Displays appropiate pop up depending on the outcome
-                if (!userGuessedHeads)
-                {
-                    soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/guess_correct.wav");
-                    MessageDialog dialog = new MessageDialog("You're right! It's tails. You have a good intuition!");
-                    dialog.Commands.Add(new UICommand("Ok", null));
-                    dialog.DefaultCommandIndex = 0;
-                    dialog.CancelCommandIndex = 1;
-                    var cmd = await dialog.ShowAsync();
-                    guessed = true;
-                }
-                else
-                {
-                    soundPlayer.Source = new Uri("ms-appx:///Assets/Sounds/guess_wrong.mp3");
-                    MessageDialog dialog = new MessageDialog("Hard luck! The coin flipped to tails this round.");
-                    dialog.Commands.Add(new UICommand("Ok", null));
-                    dialog.DefaultCommandIndex = 0;
-                    dialog.CancelCommandIndex = 1;
-                    var cmd = await dialog.ShowAsync();
-                    guessed = false;
-                }
-            }
-
-            // Stuff for databinding 
-            var historyItem = new HistoryItem
-            {
-                CoinType = coinType,
-                Duration = duration,
-                Mode = mode,
-                Result = result,
-                Guessed = guessed ? "Yes" : "No" // Short else if statement
-            };
-
-            // Add it to the history list.
-            coinFlipHistory.Insert(0, historyItem);
-
-            GuessTailsBtn.Background = new SolidColorBrush(Windows.UI.Colors.White); // Show user button is enabled
-            GuessTailsBtn.IsEnabled = true; // Enable button
-
-            GuessHeadsBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);// Show user button is enabled
-            GuessHeadsBtn.IsEnabled = true; // Enable button
-        }
 
         // Navigate to mainPage and transfer current data back
         private void CoinFlipClicked(object sender, RoutedEventArgs e)
@@ -263,6 +161,128 @@ namespace CoinFlipApp
 
             // Update the videoPlayer source
             videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}"); // Change video source
+        }
+
+        private async void GuessHeadsClicked(object sender, RoutedEventArgs e)
+        {
+            //bool guessed = false; // Default state 
+            GuessTailsBtn.IsEnabled = false; // Disable button
+            GuessTailsBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray); // Shows user the button is disabled
+
+            GuessHeadsBtn.IsEnabled = false;// Disable button
+            GuessHeadsBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);// Shows user the button is disabled
+            bool userGuessedHeads = true;
+            int coinIndex = CoinComboBox.SelectedIndex; // Get the choice
+            string coinType = "Gold"; // By default gold
+                                      // Basic switch statement that switches coin types based on index value
+                                      // Duration value, based on sliders value
+            int duration = (int)durationSlider.Value;
+
+            soundPlayer.Play();
+
+
+            switch (coinIndex)
+            {
+                case 0:
+                    coinType = "Gold";
+                    break;
+                case 1:
+                    coinType = "Silver";
+                    break;
+                case 2:
+                    coinType = "Bronze";
+                    break;
+            }
+
+
+
+
+            coinFlipMaster.HandleGuess(userGuessedHeads, coinType, duration);
+            string result = coinFlipMaster.Result;
+            string videoUri = video.ChooseVideo(coinType, duration, result);
+            videoPlayer.Source = new Uri(videoUri);
+            await Task.Delay(TimeSpan.FromSeconds(duration)); // Delay based on the delay value
+
+            bool hasGuessed = coinFlipMaster.Guessed;
+            // Stuff for databinding 
+            var historyItem = new HistoryItem
+            {
+                CoinType = coinType,
+                Duration = duration,
+                Mode = "Guess The Flip",
+                Result = result,
+                Guessed = hasGuessed ? "Yes" : "No" // Short else if statement
+            };
+
+            // Add it to the history list.
+            coinFlipHistory.Insert(0, historyItem);
+
+            GuessHeadsBtn.IsEnabled = false;// Disable button
+            GuessHeadsBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);// Shows user the button is disabled
+
+            GuessHeadsBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);// Show user button is enabled
+            GuessHeadsBtn.IsEnabled = true; // Enable button
+            GuessTailsBtn.Background = new SolidColorBrush(Windows.UI.Colors.White); // Show user button is enabled
+            GuessTailsBtn.IsEnabled = true; // Enable button
+        }
+
+        private async void GuessTailsClicked(object sender, RoutedEventArgs e)
+        {
+
+            bool userGuessedHeads = false;
+            int coinIndex = CoinComboBox.SelectedIndex; // Get the choice
+            string coinType = "Gold"; // By default gold
+                                      // Basic switch statement that switches coin types based on index value
+                                      // Duration value, based on sliders value
+            int duration = (int)durationSlider.Value;
+
+            soundPlayer.Play();
+
+            switch (coinIndex)
+            {
+                case 0:
+                    coinType = "Gold";
+                    break;
+                case 1:
+                    coinType = "Silver";
+                    break;
+                case 2:
+                    coinType = "Bronze";
+                    break;
+            }
+
+            coinFlipMaster.HandleGuess(userGuessedHeads, coinType, duration);
+            string result = coinFlipMaster.Result;
+            string videoUri = video.ChooseVideo(coinType, duration, result);
+            videoPlayer.Source = new Uri(videoUri);
+            await Task.Delay(TimeSpan.FromSeconds(duration)); // Delay based on the delay value
+
+            bool hasGuessed = coinFlipMaster.Guessed;
+
+            // Stuff for databinding 
+            var historyItem = new HistoryItem
+            {
+                CoinType = coinType,
+                Duration = duration,
+                Mode = "Guess The Flip",
+                Result = result,
+                Guessed = hasGuessed ? "Yes" : "No" // Short else if statement
+            };
+
+            // Add it to the history list.
+            coinFlipHistory.Insert(0, historyItem);
+
+
+
+            GuessHeadsBtn.IsEnabled = false;// Disable button
+            GuessHeadsBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);// Shows user the button is disabled
+            GuessTailsBtn.IsEnabled = false; // Disable button
+            GuessTailsBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray); // Shows user the button is disabled
+
+            GuessHeadsBtn.Background = new SolidColorBrush(Windows.UI.Colors.White);// Show user button is enabled
+            GuessHeadsBtn.IsEnabled = true; // Enable button
+            GuessTailsBtn.Background = new SolidColorBrush(Windows.UI.Colors.White); // Show user button is enabled
+            GuessTailsBtn.IsEnabled = true; // Enable button
         }
     }
 }

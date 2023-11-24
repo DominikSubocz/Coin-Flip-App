@@ -37,12 +37,14 @@ namespace CoinFlipApp
         private int tailScore = 0;    // Keeping score of how many times Tails showed up.  
         public ObservableCollection <HistoryItem> coinFlipHistory;
         private FlipMaster coinFlipMaster;
+        private VideoMaster video;
 
 
         public MainPage()
         {
             this.InitializeComponent();
             coinFlipMaster = new FlipMaster();
+            video = new VideoMaster();
 
 
             coinFlipHistory = new ObservableCollection<HistoryItem>();
@@ -217,6 +219,11 @@ namespace CoinFlipApp
 
             // Update the videoPlayer source
             videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}"); // Change video source
+        }
+
+        private void FlipBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

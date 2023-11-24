@@ -104,7 +104,7 @@
                 Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="2" 
                 Background="White" Width="150" Height="110" Content="Guess" FontSize="24"
                 VerticalAlignment="Bottom" HorizontalAlignment="Center" 
-                Click="FlipGuess"
+                Click="GuessHeadsClicked"
                 CornerRadius="50">
 
 
@@ -115,7 +115,7 @@
                 Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="2" 
                 Background="White" Width="150" Height="110" Content="Guess" FontSize="24"
                 VerticalAlignment="Bottom" HorizontalAlignment="Center"
-                Click="FlipGuess"
+                Click="GuessTailsClicked"
                 CornerRadius="50">
 
 

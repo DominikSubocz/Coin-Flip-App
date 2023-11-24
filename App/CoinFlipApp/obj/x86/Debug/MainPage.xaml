@@ -110,7 +110,7 @@
 
 
 
-            <!-- Flip Buttons -->
+            <!-- Flip Button -->
 
             <Button x:ConnectionId='14' 
                 x:Name="FlipBtn"
