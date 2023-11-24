@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-061T4OM</Machine>
-    <WindowsUser>stasi</WindowsUser>
+    <Machine>GY350X05</Machine>
+    <WindowsUser>1742914</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>3b94b38d-243e-4713-999b-d85735b3125d</PackageIdentityName>
     <PackageIdentityPublisher>CN=stasi</PackageIdentityPublisher>
-    <IntermediateOutputPath>F:\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.exe">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.exe">
       <PackagePath>entrypoint\CoinFlipApp.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -34,121 +34,121 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Burger-Menu\burger.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Burger-Menu\burger.svg">
       <PackagePath>Assets\Icons\Burger-Menu\burger.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Close-Icon\close.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Close-Icon\close.svg">
       <PackagePath>Assets\Icons\Close-Icon\close.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Coin-Icon\coin-icon.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Coin-Icon\coin-icon.svg">
       <PackagePath>Assets\Icons\Coin-Icon\coin-icon.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\History-Icon\history.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\History-Icon\history.svg">
       <PackagePath>Assets\Icons\History-Icon\history.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Star Icon\star.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Star Icon\star.svg">
       <PackagePath>Assets\Icons\Star Icon\star.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Time-Icon\time.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Time-Icon\time.svg">
       <PackagePath>Assets\Icons\Time-Icon\time.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Volume-Icon\volume.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Volume-Icon\volume.svg">
       <PackagePath>Assets\Icons\Volume-Icon\volume.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\coin_flip.wav">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\coin_flip.wav">
       <PackagePath>Assets\Sounds\coin_flip.wav</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\guess_correct.wav">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\guess_correct.wav">
       <PackagePath>Assets\Sounds\guess_correct.wav</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\guess_wrong.mp3">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\guess_wrong.mp3">
       <PackagePath>Assets\Sounds\guess_wrong.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-1-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-1-Heads.mp4">
       <PackagePath>Assets\Videos\Bronze-1-Heads.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-1-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-1-Tails.mp4">
       <PackagePath>Assets\Videos\Bronze-1-Tails.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-2-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-2-Heads.mp4">
       <PackagePath>Assets\Videos\Bronze-2-Heads.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-2-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-2-Tails.mp4">
       <PackagePath>Assets\Videos\Bronze-2-Tails.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-1-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-1-Heads.mp4">
       <PackagePath>Assets\Videos\Gold-1-Heads.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-1-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-1-Tails.mp4">
       <PackagePath>Assets\Videos\Gold-1-Tails.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-2-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-2-Heads.mp4">
       <PackagePath>Assets\Videos\Gold-2-Heads.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-2-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-2-Tails.mp4">
       <PackagePath>Assets\Videos\Gold-2-Tails.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-1-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-1-Heads.mp4">
       <PackagePath>Assets\Videos\Silver-1-Heads.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-1-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-1-Tails.mp4">
       <PackagePath>Assets\Videos\Silver-1-Tails.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-2-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-2-Heads.mp4">
       <PackagePath>Assets\Videos\Silver-2-Heads.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-2-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-2-Tails.mp4">
       <PackagePath>Assets\Videos\Silver-2-Tails.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.xr.xml">
       <PackagePath>CoinFlipApp.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\GuessFlip.xbf">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\GuessFlip.xbf">
       <PackagePath>GuessFlip.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\Core\CoinFlipApp.exe">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\Core\CoinFlipApp.exe">
       <PackagePath>CoinFlipApp.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
