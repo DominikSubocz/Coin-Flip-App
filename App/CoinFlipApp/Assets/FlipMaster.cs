@@ -39,7 +39,6 @@ namespace CoinFlipApp.Assets
                 Result = result,
                 Guessed = "N/A"
             };
-            await Task.Delay(duration); // Adjust the delay time as needed
             coinFlipHistory.Insert(0, historyItem);
 
             if (isHeads)
@@ -51,7 +50,7 @@ namespace CoinFlipApp.Assets
                 TailScore++;
             }
 
-            // You can put a delay here if you want to see the result before updating the scores
+            await Task.Delay(duration); // Adjust the delay time as needed
 
         }
     }

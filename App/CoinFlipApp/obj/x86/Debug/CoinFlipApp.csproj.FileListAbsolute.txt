@@ -47,7 +47,6 @@ F:\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\qualifiers.txt
 F:\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\qualifiers.txt.intermediate
 F:\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 F:\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\ProjectArchitectures.txt
-F:\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
 F:\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424779200000000.json
 C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\CoinFlipApp.csproj.AssemblyReference.cache
 C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\App.g.i.cs

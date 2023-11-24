@@ -115,64 +115,12 @@ namespace CoinFlipApp
         {
 
 
-            //// Stuff for multipage databinding.
-            //string mode = "Coin Flip";  // Current gamemode.
-            //int coinIndex = CoinComboBox.SelectedIndex; // Coin type (gold, silver, bronze)
-            //string coinType = "Gold";   // By default Gold.
+            FlipBtn.IsEnabled = false; // Disable button.
+            FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);   // Change colour to dark gray to show user the button is disabled.
 
 
 
-            //int duration = (int)durationSlider.Value;   // Hold value of how long the coin will flip for. Kind of a delay.
 
-
-            //bool isHeads = (new Random().Next(2) == 0);     // Random number between 0 & 1. (False or True).
-            //string result = isHeads ? "Heads" : "Tails";    // Short way of writing if else. 0 = Heads, 1 = Tails.
-
-            //string video = GetVideoFileName(coinType, duration, result);
-
-            //video = video.Replace("{result}", result);      // Video replacement.
-            //soundPlayer.Play();                             // Play SFX.
-            //videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}");  // Change video source.
-
-            //// Stuff for databinding (not working).
-            //var historyItem = new HistoryItem
-            //{
-            //    CoinType = coinType,
-            //    Duration = duration,
-            //    Mode = mode,
-            //    Result = result,
-            //    Guessed = "N/A"
-            //};
-
-            //// Add it to the history list (not working).
-            //coinFlipHistory.Insert(0, historyItem);
-
-
-            //// Basic if statement, score of one will increment based on the boolean generated.
-            //if (isHeads)
-            //{
-            //    headScore++;    // Heads score incremented.
-            //    videoPlayer.Play();
-
-            //}
-
-            //else
-            //{
-            //    tailScore++;    // Heads score incremented.
-            //    videoPlayer.Play();
-            //}
-
-
-            //FlipBtn.IsEnabled = false; // Disable button.
-            //FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);   // Change colour to dark gray to show user the button is disabled.
-
-            //await Task.Delay(TimeSpan.FromSeconds(duration));   // Delay based on the flip duration value.
-
-
-            //FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White); // Change colour back to normal to show user button is enabled now.
-            //FlipBtn.IsEnabled = true;                           // Enable button.
-            //HeadsScoreTextBlock.Text = headScore.ToString(); // Update textboxes, convert int to string.
-            //TailsScoreTextBlock.Text = tailScore.ToString();    // Update textboxes, convert int to string.
             VideoMaster video = new VideoMaster();
             int coinIndex = CoinComboBox.SelectedIndex;
             string coinType = "Gold";
@@ -199,9 +147,7 @@ namespace CoinFlipApp
 
             // Delegate coin flipping to CoinFlipGame
 
-            // Update UI elements based on CoinFlipGame properties
-            HeadsScoreTextBlock.Text = coinFlipMaster.HeadScore.ToString();
-            TailsScoreTextBlock.Text = coinFlipMaster.TailScore.ToString();
+
 
             var historyItem = new HistoryItem
             {
@@ -211,9 +157,15 @@ namespace CoinFlipApp
                 Result = result,
                 Guessed = "N/A"
             };
-            await Task.Delay(duration); // Adjust the delay time as needed
+            await Task.Delay(TimeSpan.FromSeconds(duration));   // Delay based on the flip duration value.
             coinFlipHistory.Insert(0, historyItem);
 
+
+            FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White); // Change colour back to normal to show user button is enabled now.
+            FlipBtn.IsEnabled = true;                           // Enable button.
+            // Update UI elements based on CoinFlipGame properties
+            HeadsScoreTextBlock.Text = coinFlipMaster.HeadScore.ToString();
+            TailsScoreTextBlock.Text = coinFlipMaster.TailScore.ToString();
         }
 
         private void GuessClicked(object sender, RoutedEventArgs e)
