@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Collections.ObjectModel;
+using CoinFlipApp.Assets;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -35,11 +36,15 @@ namespace CoinFlipApp
         private int headScore = 0;    // Keeping score of how many times Heads showed up.  
         private int tailScore = 0;    // Keeping score of how many times Tails showed up.  
         public ObservableCollection <HistoryItem> coinFlipHistory;
+        private FlipMaster coinFlipMaster;
 
 
         public MainPage()
         {
             this.InitializeComponent();
+            coinFlipMaster = new FlipMaster();
+
+
             coinFlipHistory = new ObservableCollection<HistoryItem>();
 
             ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar; // New Titlebar
@@ -110,77 +115,104 @@ namespace CoinFlipApp
         {
 
 
-            // Stuff for multipage databinding.
-            string mode = "Coin Flip";  // Current gamemode.
-            int coinIndex = CoinComboBox.SelectedIndex; // Coin type (gold, silver, bronze)
-            string coinType = "Gold";   // By default Gold.
+            //// Stuff for multipage databinding.
+            //string mode = "Coin Flip";  // Current gamemode.
+            //int coinIndex = CoinComboBox.SelectedIndex; // Coin type (gold, silver, bronze)
+            //string coinType = "Gold";   // By default Gold.
 
-            // Switch block, it basically switches coin type based on index value.
+
+
+            //int duration = (int)durationSlider.Value;   // Hold value of how long the coin will flip for. Kind of a delay.
+
+
+            //bool isHeads = (new Random().Next(2) == 0);     // Random number between 0 & 1. (False or True).
+            //string result = isHeads ? "Heads" : "Tails";    // Short way of writing if else. 0 = Heads, 1 = Tails.
+
+            //string video = GetVideoFileName(coinType, duration, result);
+
+            //video = video.Replace("{result}", result);      // Video replacement.
+            //soundPlayer.Play();                             // Play SFX.
+            //videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}");  // Change video source.
+
+            //// Stuff for databinding (not working).
+            //var historyItem = new HistoryItem
+            //{
+            //    CoinType = coinType,
+            //    Duration = duration,
+            //    Mode = mode,
+            //    Result = result,
+            //    Guessed = "N/A"
+            //};
+
+            //// Add it to the history list (not working).
+            //coinFlipHistory.Insert(0, historyItem);
+
+
+            //// Basic if statement, score of one will increment based on the boolean generated.
+            //if (isHeads)
+            //{
+            //    headScore++;    // Heads score incremented.
+            //    videoPlayer.Play();
+
+            //}
+
+            //else
+            //{
+            //    tailScore++;    // Heads score incremented.
+            //    videoPlayer.Play();
+            //}
+
+
+            //FlipBtn.IsEnabled = false; // Disable button.
+            //FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);   // Change colour to dark gray to show user the button is disabled.
+
+            //await Task.Delay(TimeSpan.FromSeconds(duration));   // Delay based on the flip duration value.
+
+
+            //FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White); // Change colour back to normal to show user button is enabled now.
+            //FlipBtn.IsEnabled = true;                           // Enable button.
+            //HeadsScoreTextBlock.Text = headScore.ToString(); // Update textboxes, convert int to string.
+            //TailsScoreTextBlock.Text = tailScore.ToString();    // Update textboxes, convert int to string.
+            VideoMaster video = new VideoMaster();
+            int coinIndex = CoinComboBox.SelectedIndex;
+            string coinType = "Gold";
+
             switch (coinIndex)
             {
                 case 0:
-                    coinType = "Gold";  // Change to Gold.
+                    coinType = "Gold";
                     break;
                 case 1:
-                    coinType = "Silver";    // Change to Silver.
+                    coinType = "Silver";
                     break;
                 case 2:
-                    coinType = "Bronze";    // Change to Bronze.
+                    coinType = "Bronze";
                     break;
-
             }
 
-            int duration = (int)durationSlider.Value;   // Hold value of how long the coin will flip for. Kind of a delay.
+            int duration = (int)durationSlider.Value;
+            soundPlayer.Play();
+            await coinFlipMaster.FlipCoin(coinType, duration);
+            string result = coinFlipMaster.Result;
+            string videoUri = video.ChooseVideo(coinType, duration, result);
+            videoPlayer.Source = new Uri(videoUri);
 
+            // Delegate coin flipping to CoinFlipGame
 
-            bool isHeads = (new Random().Next(2) == 0);     // Random number between 0 & 1. (False or True).
-            string result = isHeads ? "Heads" : "Tails";    // Short way of writing if else. 0 = Heads, 1 = Tails.
+            // Update UI elements based on CoinFlipGame properties
+            HeadsScoreTextBlock.Text = coinFlipMaster.HeadScore.ToString();
+            TailsScoreTextBlock.Text = coinFlipMaster.TailScore.ToString();
 
-            string video = GetVideoFileName(coinType, duration, result);
-
-            video = video.Replace("{result}", result);      // Video replacement.
-            soundPlayer.Play();                             // Play SFX.
-            videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}");  // Change video source.
-
-            // Stuff for databinding (not working).
             var historyItem = new HistoryItem
             {
                 CoinType = coinType,
                 Duration = duration,
-                Mode = mode,
+                Mode = "Coin Flip",
                 Result = result,
                 Guessed = "N/A"
             };
-
-            // Add it to the history list (not working).
+            await Task.Delay(duration); // Adjust the delay time as needed
             coinFlipHistory.Insert(0, historyItem);
-
-
-            // Basic if statement, score of one will increment based on the boolean generated.
-            if (isHeads)
-            {
-                headScore++;    // Heads score incremented.
-                videoPlayer.Play();
-
-            }
-
-            else
-            {
-                tailScore++;    // Heads score incremented.
-                videoPlayer.Play();
-            }
-
-
-            FlipBtn.IsEnabled = false; // Disable button.
-            FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.DarkGray);   // Change colour to dark gray to show user the button is disabled.
-
-            await Task.Delay(TimeSpan.FromSeconds(duration));   // Delay based on the flip duration value.
-
-
-            FlipBtn.Background = new SolidColorBrush(Windows.UI.Colors.White); // Change colour back to normal to show user button is enabled now.
-            FlipBtn.IsEnabled = true;                           // Enable button.
-            HeadsScoreTextBlock.Text = headScore.ToString(); // Update textboxes, convert int to string.
-            TailsScoreTextBlock.Text = tailScore.ToString();    // Update textboxes, convert int to string.
 
         }
 
