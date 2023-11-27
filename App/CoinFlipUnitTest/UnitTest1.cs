@@ -1,15 +1,23 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+
 
 namespace CoinFlipUnitTest
 {
     [TestClass]
-    public class UnitTest1
+    public class FlipMasterTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void FlipCoin_ExpectedBehaviour()
         {
-            
+            // Arrange
+            var flipMaster = new FlipMaster();
+
+
+            // Act
+
+            // Assert
         }
     }
 }

@@ -16,7 +16,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Collections.ObjectModel;
-using CoinFlipApp.Assets;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -39,7 +38,10 @@ namespace CoinFlipApp
         private FlipMaster coinFlipMaster;
         private VideoMaster video;
 
-
+        /// <summary>
+        /// Initializes a new instance of the MainPage class.
+        /// Sets up necessary components, initializes the FlipMaster and VideoMaster objects, and configures the application view title bar.
+        /// </summary>
         public MainPage()
         {
             this.InitializeComponent();
@@ -72,8 +74,9 @@ namespace CoinFlipApp
 
 
 
-
-        // Event handler 1: Open/close menu pane when the burger menu icon is clicked.
+        /// <summary>
+        /// Opens or closes the menu pane based on its current state.
+        /// </summary>
         private void MenuClicked(object sender, RoutedEventArgs e)
         {
             if (MenuSplitView.IsPaneOpen == false)
@@ -89,7 +92,9 @@ namespace CoinFlipApp
             }
         }
 
-        // Event handler 2: Adjust volume of soundPlayer based on the volume slider's value.
+        /// <summary>
+        /// Adjusts the volume level of soundPlayer based on the volume slider's value.
+        /// </summary>
         private void VolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
             Slider slider = sender as Slider;
@@ -97,9 +102,13 @@ namespace CoinFlipApp
             soundPlayer.Volume = volumeLevel;   // Changing volume level.
         }
 
-        // Function: Generate video file name based on coinType and duration.
-        // Just basic concatenation of parameters which will form a full video name.
-        // It just basically picks the right video.
+        /// <summary>
+        /// Constructs the appropriate video file name based on the selected coin type, duration, and result (Heads).
+        /// </summary>
+        /// <param name="coinType">The selected coin type.</param>
+        /// <param name="duration">The selected duration.</param>
+        /// <param name="result">The result of the coin flip (Heads).</param>
+        /// <returns>The full filename of the video to be played.</returns>
         private string GetVideoFileName(string coinType, int duration, string result)
         {
             string baseVideoName = $"{coinType}-{duration}";
@@ -111,8 +120,12 @@ namespace CoinFlipApp
             return fullVideoName;
         }
 
-
-        // Event handler 4: Perform coin flip when the Coin Flip button is clicked.
+        /// <summary>
+        /// Handles the click event when the user guesses Heads.
+        /// Disables the appropriate buttons, plays the flip sound, and displays the result.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">Event arguments.</param>
         private async void FlipCoin(object sender, RoutedEventArgs e)
         {
 
@@ -170,13 +183,20 @@ namespace CoinFlipApp
             TailsScoreTextBlock.Text = coinFlipMaster.TailScore.ToString();
         }
 
+        /// <summary>
+        /// Handles the click event when the user selects the coin flip option from the menu.
+        /// Navigates to the GuessFlip page and transfers the current data to reflect on other pages.
+        /// </summary>
         private void GuessClicked(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(GuessFlip), coinFlipHistory);
 
         }
 
-
+        /// <summary>
+        /// Receives data from GuessFlip upon navigation.
+        /// </summary>
+        /// <param name="e">Event arguments containing the received data.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             if (e.Parameter is ObservableCollection<HistoryItem>)
@@ -188,6 +208,12 @@ namespace CoinFlipApp
             }
         }
 
+        /// <summary>
+        /// Handles the click event when the user selects the coin type from the menu.
+        /// Updates the videoPlayer source based on the selected coin type and duration.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">Event arguments.</param>
         private void coinSelected(object sender, SelectionChangedEventArgs e)
         {
             // Get the selected coin type

@@ -1,5 +1,4 @@
-﻿using CoinFlipApp.Assets;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -32,19 +31,23 @@ namespace CoinFlipApp
         // Observable collection, a list that can be updated when running the app
         public ObservableCollection<HistoryItem> coinFlipHistory;
 
-        public double volume;
+        public double volume;   // (Future Features) Parameter transfer to other pages
 
-        public string coinType;
+        public string coinType;     // (Future Features) Parameter transfer to other pages
 
-        public string result;
+        public string result;       // (Future Features) Parameter transfer to other pages
 
-        public string duration;
+        public string duration;     // (Future Features) Parameter transfer to other pages
 
-        private FlipMaster coinFlipMaster;
+        private FlipMaster coinFlipMaster;      // (Future Features) Parameter transfer to other pages
 
-        private VideoMaster video;
+        private VideoMaster video;      // (Future Features) Parameter transfer to other pages
 
 
+        /// <summary>
+        /// Initializes a new instance of the GuessFlip class.
+        /// Sets up necessary components and initializes the FlipMaster and VideoMaster objects.
+        /// </summary>
         public GuessFlip()
         {
             this.InitializeComponent();
@@ -66,9 +69,13 @@ namespace CoinFlipApp
             };
         }
 
-        // Video file name constructor
-        // Based on parameters it constructs appropiate video name, then it returns the full filename
-        // At last the appropiate video is being played
+        /// <summary>
+        /// Constructs the appropriate video file name based on the selected coin type, duration, and result (Heads).
+        /// </summary>
+        /// <param name="coinType">The selected coin type.</param>
+        /// <param name="duration">The selected duration.</param>
+        /// <param name="result">The result of the coin flip (Heads).</param>
+        /// <returns>The full filename of the video to be played.</returns>
         private string GetVideoFileName(string coinType, int duration, string result)
         {
             string baseVideoName = $"{coinType}-{duration}";
@@ -80,7 +87,9 @@ namespace CoinFlipApp
             return fullVideoName;
         }
 
-        // Opens or closes the menu pane
+        /// <summary>
+        /// Opens or closes the menu pane based on its current state.
+        /// </summary>
         private void MenuClicked(object sender, RoutedEventArgs e)
         {
             if (MenuSplitView.IsPaneOpen == false)
@@ -96,8 +105,9 @@ namespace CoinFlipApp
             }
         }
 
-        // Volume change function
-        // All this does is adjust the volume level based on the slider's value
+        /// <summary>
+        /// Adjusts the volume level based on the slider's value.
+        /// </summary>
         private void VolumeChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
             Slider slider = sender as Slider;
@@ -106,9 +116,10 @@ namespace CoinFlipApp
         }
 
 
-        // Guess method
-
-        // Navigate to mainPage and transfer current data back
+        /// <summary>
+        /// Handles the click event when the user selects the coin flip option from the menu.
+        /// Navigates to the MainPage and transfers the current data to reflect on other pages.
+        /// </summary>
         private void CoinFlipClicked(object sender, RoutedEventArgs e)
         {
             if (MenuSplitView.IsPaneOpen == true)
@@ -118,7 +129,10 @@ namespace CoinFlipApp
             }
         }
 
-        // Receive data from mainPage on arrival.
+        /// <summary>
+        /// Receives data from MainPage upon navigation.
+        /// </summary>
+        /// <param name="e">Event arguments containing the received data.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             if (e.Parameter is ObservableCollection<HistoryItem>)
@@ -130,6 +144,9 @@ namespace CoinFlipApp
             }
         }
 
+        /// <summary>
+        /// Retrieves the selected coin type and sets up the video player with the appropriate video file.
+        /// </summary>
         private void coinSelected(object sender, SelectionChangedEventArgs e)
         {
             // Get the selected coin type
@@ -163,6 +180,12 @@ namespace CoinFlipApp
             videoPlayer.Source = new Uri($"ms-appx:///Assets/Videos/{video}"); // Change video source
         }
 
+        /// <summary>
+        /// Handles the click event when the user guesses Heads.
+        /// Disables the appropriate buttons, plays the flip sound, and displays the result.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">Event arguments.</param>
         private async void GuessHeadsClicked(object sender, RoutedEventArgs e)
         {
             //bool guessed = false; // Default state 
@@ -197,7 +220,7 @@ namespace CoinFlipApp
 
 
 
-            coinFlipMaster.HandleGuess(userGuessedHeads, coinType, duration);
+            coinFlipMaster.GuessFlip(userGuessedHeads, coinType, duration);
             string result = coinFlipMaster.Result;
             string videoUri = video.ChooseVideo(coinType, duration, result);
             videoPlayer.Source = new Uri(videoUri);
@@ -226,6 +249,13 @@ namespace CoinFlipApp
             GuessTailsBtn.IsEnabled = true; // Enable button
         }
 
+
+        /// <summary>
+        /// Handles the click event when the user guesses Tails.
+        /// Disables the appropriate buttons, plays the flip sound, and displays the result.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">Event arguments.</param>
         private async void GuessTailsClicked(object sender, RoutedEventArgs e)
         {
 
@@ -251,7 +281,7 @@ namespace CoinFlipApp
                     break;
             }
 
-            coinFlipMaster.HandleGuess(userGuessedHeads, coinType, duration);
+            coinFlipMaster.GuessFlip(userGuessedHeads, coinType, duration);
             string result = coinFlipMaster.Result;
             string videoUri = video.ChooseVideo(coinType, duration, result);
             videoPlayer.Source = new Uri(videoUri);
