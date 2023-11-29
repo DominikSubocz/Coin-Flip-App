@@ -30,25 +30,25 @@
     <AppXManifest Include="F:\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-27T12:06:05.103</Modified>
+      <Modified>2023-11-29T11:01:02.618</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\UnitTestProject1.exe">
       <PackagePath>entrypoint\UnitTestProject1.exe</PackagePath>
-      <Modified>2023-11-27T12:06:04.532</Modified>
+      <Modified>2023-11-29T11:01:02.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.exe">
       <PackagePath>CoinFlipApp.exe</PackagePath>
-      <Modified>2023-11-27T12:01:50.604</Modified>
+      <Modified>2023-11-29T11:00:58.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\UnitTestProject1.pdb">
       <PackagePath>UnitTestProject1.pdb</PackagePath>
-      <Modified>2023-11-27T12:06:04.532</Modified>
+      <Modified>2023-11-29T11:01:02.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.pdb">
       <PackagePath>CoinFlipApp.pdb</PackagePath>
-      <Modified>2023-11-27T12:01:50.604</Modified>
+      <Modified>2023-11-29T11:00:58.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\17.0\References\CommonConfiguration\neutral\testhost.dll">
       <PackagePath>testhost.dll</PackagePath>
@@ -166,19 +166,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\UnitTestApp.xbf">
       <PackagePath>UnitTestApp.xbf</PackagePath>
-      <Modified>2023-11-27T12:06:04.492</Modified>
+      <Modified>2023-11-29T11:01:02.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-11-27T12:01:50.550</Modified>
+      <Modified>2023-11-29T11:00:58.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\GuessFlip.xbf">
       <PackagePath>GuessFlip.xbf</PackagePath>
-      <Modified>2023-11-27T12:01:50.548</Modified>
+      <Modified>2023-11-29T11:00:58.450</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-11-27T12:01:50.550</Modified>
+      <Modified>2023-11-29T11:00:58.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Burger-Menu\burger.svg">
       <PackagePath>Assets\Icons\Burger-Menu\burger.svg</PackagePath>
@@ -282,7 +282,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\Core\UnitTestProject1.exe">
       <PackagePath>UnitTestProject1.exe</PackagePath>
-      <Modified>2023-11-27T12:06:05.101</Modified>
+      <Modified>2023-11-29T11:01:02.616</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

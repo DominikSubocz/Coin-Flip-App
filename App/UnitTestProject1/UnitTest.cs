@@ -27,15 +27,11 @@ namespace UnitTestProject1
             // Act
             flipMaster.FlipCoin(coinType, duration);
 
-
-
             // Assert
             if (flipMaster.Result == "Heads")
             {
                 Assert.AreEqual(flipMaster.Result, "Heads");
             }
-
-
 
         }
 
@@ -46,13 +42,9 @@ namespace UnitTestProject1
             var flipMaster = new FlipMaster();
             string coinType = "Gold";
             int duration = 1;
-           
-
-
 
             // Act
             flipMaster.FlipCoin(coinType, duration);
-
 
             // Assert
             Assert.AreEqual(flipMaster.Result, "Tails");
@@ -67,15 +59,11 @@ namespace UnitTestProject1
             string coinType = "Gold";
             int duration = 1;
 
-
             // Act
             flipMaster.GuessFlip(userGuessedHeads, coinType, duration);
 
             //Assert 
             Assert.AreEqual("Heads", flipMaster.Result, "The result should be 'Heads' when the guess is correct.");
-
-
-
         }
 
         [TestMethod]
@@ -87,15 +75,11 @@ namespace UnitTestProject1
             string coinType = "Gold";
             int duration = 1;
 
-
             // Act
             flipMaster.GuessFlip(userGuessedHeads, coinType, duration);
 
             //Assert 
             Assert.AreEqual("Tails", flipMaster.Result, "The result should be 'Tails' when the guess is correct.");
-
-
-
         }
     }
 
