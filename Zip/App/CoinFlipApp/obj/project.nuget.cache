@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "izyQsAk0T08JxUaXvpzlF4WB2nlvqeqOTIr+gEvJL62uKhGleROJBqFfMaS5IUfsRCtDthNSd13r2RujI2hkZQ==",
+  "dgSpecHash": "q8yPtvjJd+urGhkAKIQ0IVJBlMYuntQB7Wn8dwdsZVkiM61eSOrB1SCdKUjDPkGXp6hqBlCrFCkobCOSSIKKfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj",
+  "projectFilePath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\CoinFlipApp.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",

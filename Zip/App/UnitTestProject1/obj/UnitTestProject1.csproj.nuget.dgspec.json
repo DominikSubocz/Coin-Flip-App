@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\UnitTestProject1\\UnitTestProject1.csproj": {}
+    "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\UnitTestProject1\\UnitTestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj": {
+    "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\CoinFlipApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj",
+        "projectUniqueName": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\CoinFlipApp.csproj",
         "projectName": "CoinFlipApp",
-        "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj",
+        "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\CoinFlipApp.csproj",
         "packagesPath": "C:\\Users\\1742914\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\obj\\",
+        "outputPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\UnitTestProject1\\UnitTestProject1.csproj": {
+    "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\UnitTestProject1\\UnitTestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\UnitTestProject1\\UnitTestProject1.csproj",
+        "projectUniqueName": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\UnitTestProject1\\UnitTestProject1.csproj",
         "projectName": "UnitTestProject1",
-        "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\UnitTestProject1\\UnitTestProject1.csproj",
+        "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\UnitTestProject1\\UnitTestProject1.csproj",
         "packagesPath": "C:\\Users\\1742914\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\UnitTestProject1\\obj\\",
+        "outputPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\UnitTestProject1\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -104,8 +104,8 @@
         "frameworks": {
           "uap10.0.17763": {
             "projectReferences": {
-              "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj": {
-                "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj"
+              "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\CoinFlipApp.csproj": {
+                "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\CoinFlipApp.csproj"
               }
             }
           }

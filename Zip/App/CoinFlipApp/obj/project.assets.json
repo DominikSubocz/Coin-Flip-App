@@ -10262,11 +10262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj",
+      "projectUniqueName": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\CoinFlipApp.csproj",
       "projectName": "CoinFlipApp",
-      "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj",
+      "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\CoinFlipApp.csproj",
       "packagesPath": "C:\\Users\\1742914\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\obj\\",
+      "outputPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\CoinFlipApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

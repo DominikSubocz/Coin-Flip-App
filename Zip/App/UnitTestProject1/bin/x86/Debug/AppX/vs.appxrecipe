@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>3ddc1988-4b82-4068-8360-c568aa34844c</PackageIdentityName>
     <PackageIdentityPublisher>CN=stasi</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>E285B25D1108BD71CA80FB9D43809D7BBD81DA6A572C3155FF7370429253F0D9</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3ddc1988-4b82-4068-8360-c568aa34844c_1.0.0.0_x86__arxtpr6snakca</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3ddc1988-4b82-4068-8360-c568aa34844c_arxtpr6snakca!vstest.executionengine.universal.App</RegisteredUserModeAppID>
@@ -27,26 +27,26 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-01T10:47:14.617</Modified>
+      <Modified>2023-12-01T12:36:14.903</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\UnitTestProject1.exe">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\bin\x86\Debug\UnitTestProject1.exe">
       <PackagePath>entrypoint\UnitTestProject1.exe</PackagePath>
-      <Modified>2023-12-01T10:47:13.391</Modified>
+      <Modified>2023-12-01T12:36:14.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.exe">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.exe">
       <PackagePath>CoinFlipApp.exe</PackagePath>
       <Modified>2023-12-01T09:40:10.478</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\UnitTestProject1.pdb">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\bin\x86\Debug\UnitTestProject1.pdb">
       <PackagePath>UnitTestProject1.pdb</PackagePath>
-      <Modified>2023-12-01T10:47:13.391</Modified>
+      <Modified>2023-12-01T12:36:14.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.pdb">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.pdb">
       <PackagePath>CoinFlipApp.pdb</PackagePath>
       <Modified>2023-12-01T09:40:10.478</Modified>
     </AppxPackagedFile>
@@ -122,153 +122,153 @@
       <PackagePath>msdia140.dll</PackagePath>
       <Modified>2021-10-19T16:48:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2023-12-01T08:57:35.084</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-12-01T08:57:35.084</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-12-01T08:57:35.084</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-12-01T08:57:35.084</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-12-01T08:57:35.084</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-12-01T08:57:35.084</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-12-01T08:57:35.084</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\UnitTestProject1.xr.xml">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\bin\x86\Debug\UnitTestProject1.xr.xml">
       <PackagePath>UnitTestProject1.xr.xml</PackagePath>
       <Modified>2023-12-01T08:57:35.338</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.xr.xml">
       <PackagePath>CoinFlipApp.xr.xml</PackagePath>
       <Modified>2023-11-17T15:27:14.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\UnitTestApp.xbf">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\bin\x86\Debug\UnitTestApp.xbf">
       <PackagePath>UnitTestApp.xbf</PackagePath>
-      <Modified>2023-12-01T10:47:13.332</Modified>
+      <Modified>2023-12-01T12:36:14.167</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2023-12-01T09:40:10.376</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\GuessFlip.xbf">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\bin\x86\Debug\GuessFlip.xbf">
       <PackagePath>GuessFlip.xbf</PackagePath>
       <Modified>2023-12-01T09:40:10.376</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
       <Modified>2023-12-01T09:40:10.376</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Burger-Menu\burger.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Icons\Burger-Menu\burger.svg">
       <PackagePath>Assets\Icons\Burger-Menu\burger.svg</PackagePath>
       <Modified>2023-11-17T08:54:32.612</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Close-Icon\close.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Icons\Close-Icon\close.svg">
       <PackagePath>Assets\Icons\Close-Icon\close.svg</PackagePath>
       <Modified>2023-11-17T08:54:32.613</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Coin-Icon\coin-icon.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Icons\Coin-Icon\coin-icon.svg">
       <PackagePath>Assets\Icons\Coin-Icon\coin-icon.svg</PackagePath>
       <Modified>2023-11-17T08:54:32.614</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\History-Icon\history.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Icons\History-Icon\history.svg">
       <PackagePath>Assets\Icons\History-Icon\history.svg</PackagePath>
       <Modified>2023-11-17T08:54:32.615</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Star Icon\star.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Icons\Star Icon\star.svg">
       <PackagePath>Assets\Icons\Star Icon\star.svg</PackagePath>
       <Modified>2023-11-17T08:54:32.616</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Time-Icon\time.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Icons\Time-Icon\time.svg">
       <PackagePath>Assets\Icons\Time-Icon\time.svg</PackagePath>
       <Modified>2023-11-17T08:54:32.617</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Volume-Icon\volume.svg">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Icons\Volume-Icon\volume.svg">
       <PackagePath>Assets\Icons\Volume-Icon\volume.svg</PackagePath>
       <Modified>2023-11-17T08:54:32.618</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\coin_flip.wav">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Sounds\coin_flip.wav">
       <PackagePath>Assets\Sounds\coin_flip.wav</PackagePath>
       <Modified>2023-11-17T08:54:32.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\guess_correct.wav">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Sounds\guess_correct.wav">
       <PackagePath>Assets\Sounds\guess_correct.wav</PackagePath>
       <Modified>2023-11-17T08:54:32.621</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\guess_wrong.mp3">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Sounds\guess_wrong.mp3">
       <PackagePath>Assets\Sounds\guess_wrong.mp3</PackagePath>
       <Modified>2023-11-17T08:54:32.622</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-1-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Bronze-1-Heads.mp4">
       <PackagePath>Assets\Videos\Bronze-1-Heads.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.632</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-1-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Bronze-1-Tails.mp4">
       <PackagePath>Assets\Videos\Bronze-1-Tails.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.639</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-2-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Bronze-2-Heads.mp4">
       <PackagePath>Assets\Videos\Bronze-2-Heads.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.651</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-2-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Bronze-2-Tails.mp4">
       <PackagePath>Assets\Videos\Bronze-2-Tails.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.662</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-1-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Gold-1-Heads.mp4">
       <PackagePath>Assets\Videos\Gold-1-Heads.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-1-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Gold-1-Tails.mp4">
       <PackagePath>Assets\Videos\Gold-1-Tails.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.674</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-2-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Gold-2-Heads.mp4">
       <PackagePath>Assets\Videos\Gold-2-Heads.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.685</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-2-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Gold-2-Tails.mp4">
       <PackagePath>Assets\Videos\Gold-2-Tails.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.696</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-1-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Silver-1-Heads.mp4">
       <PackagePath>Assets\Videos\Silver-1-Heads.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-1-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Silver-1-Tails.mp4">
       <PackagePath>Assets\Videos\Silver-1-Tails.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.709</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-2-Heads.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Silver-2-Heads.mp4">
       <PackagePath>Assets\Videos\Silver-2-Heads.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.718</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-2-Tails.mp4">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Assets\Videos\Silver-2-Tails.mp4">
       <PackagePath>Assets\Videos\Silver-2-Tails.mp4</PackagePath>
       <Modified>2023-11-17T08:54:32.729</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\CoinFlipApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2023-11-17T08:54:32.736</Modified>
     </AppxPackagedFile>
@@ -276,13 +276,13 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T16:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-01T09:40:16.309</Modified>
+      <Modified>2023-12-01T12:35:11.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\bin\x86\Debug\Core\UnitTestProject1.exe">
+    <AppxPackagedFile Include="C:\Users\1742914\Downloads\Coin-Flip-App\Zip\App\UnitTestProject1\bin\x86\Debug\Core\UnitTestProject1.exe">
       <PackagePath>UnitTestProject1.exe</PackagePath>
-      <Modified>2023-12-01T10:47:14.611</Modified>
+      <Modified>2023-12-01T12:36:14.899</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

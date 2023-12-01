@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9bL8q38b7JG4cJgwusYlMhmSe9pGgVFy7ZKM31r/ZNhOe27vcf7IsOxz65QSF2Xb6xmTWVefGs/7n59ltdQu7w==",
+  "dgSpecHash": "/trfmqKFd3E6TRwY4ew4pO26gHaZveQhv1gFFpKJZCm8TqH0JZ+jASKgP79YKjny/4sWf42NZHv7i6MneLSyzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\UnitTestProject1\\UnitTestProject1.csproj",
+  "projectFilePath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\Zip\\App\\UnitTestProject1\\UnitTestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Users\\1742914\\.nuget\\packages\\microsoft.net.test.sdk\\16.11.0\\microsoft.net.test.sdk.16.11.0.nupkg.sha512",
