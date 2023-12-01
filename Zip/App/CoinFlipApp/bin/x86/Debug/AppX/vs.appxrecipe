@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-061T4OM</Machine>
+    <WindowsUser>stasi</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>3b94b38d-243e-4713-999b-d85735b3125d</PackageIdentityName>
+    <PackageIdentityPublisher>CN=stasi</PackageIdentityPublisher>
+    <IntermediateOutputPath>F:\Coin-Flip-App\App\CoinFlipApp\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>939B9D073CB8B8AD91E1D9B2FC55E3F05FE49091E9B59AA6D658DC8D4FD198B9</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>3b94b38d-243e-4713-999b-d85735b3125d_1.0.0.0_x86__arxtpr6snakca</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>3b94b38d-243e-4713-999b-d85735b3125d_arxtpr6snakca!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>3b94b38d-243e-4713-999b-d85735b3125d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=stasi</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-11-27T11:24:36.262</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.exe">
+      <PackagePath>entrypoint\CoinFlipApp.exe</PackagePath>
+      <Modified>2023-11-27T11:24:35.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2022-06-10T21:24:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+      <Modified>2020-12-02T03:52:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Burger-Menu\burger.svg">
+      <PackagePath>Assets\Icons\Burger-Menu\burger.svg</PackagePath>
+      <Modified>2023-11-12T14:00:07.515</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Close-Icon\close.svg">
+      <PackagePath>Assets\Icons\Close-Icon\close.svg</PackagePath>
+      <Modified>2023-11-12T14:00:23.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Coin-Icon\coin-icon.svg">
+      <PackagePath>Assets\Icons\Coin-Icon\coin-icon.svg</PackagePath>
+      <Modified>2023-11-12T14:00:34.970</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\History-Icon\history.svg">
+      <PackagePath>Assets\Icons\History-Icon\history.svg</PackagePath>
+      <Modified>2023-11-12T14:00:40.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Star Icon\star.svg">
+      <PackagePath>Assets\Icons\Star Icon\star.svg</PackagePath>
+      <Modified>2023-11-12T14:00:46.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Time-Icon\time.svg">
+      <PackagePath>Assets\Icons\Time-Icon\time.svg</PackagePath>
+      <Modified>2023-11-12T14:27:29.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Icons\Volume-Icon\volume.svg">
+      <PackagePath>Assets\Icons\Volume-Icon\volume.svg</PackagePath>
+      <Modified>2023-11-12T14:26:24.758</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\coin_flip.wav">
+      <PackagePath>Assets\Sounds\coin_flip.wav</PackagePath>
+      <Modified>2023-11-12T13:59:40.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\guess_correct.wav">
+      <PackagePath>Assets\Sounds\guess_correct.wav</PackagePath>
+      <Modified>2023-11-12T13:59:40.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Sounds\guess_wrong.mp3">
+      <PackagePath>Assets\Sounds\guess_wrong.mp3</PackagePath>
+      <Modified>2023-11-12T13:59:40.531</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-1-Heads.mp4">
+      <PackagePath>Assets\Videos\Bronze-1-Heads.mp4</PackagePath>
+      <Modified>2023-11-11T14:59:54.464</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-1-Tails.mp4">
+      <PackagePath>Assets\Videos\Bronze-1-Tails.mp4</PackagePath>
+      <Modified>2023-11-11T15:00:17.370</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-2-Heads.mp4">
+      <PackagePath>Assets\Videos\Bronze-2-Heads.mp4</PackagePath>
+      <Modified>2023-11-11T14:57:58.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Bronze-2-Tails.mp4">
+      <PackagePath>Assets\Videos\Bronze-2-Tails.mp4</PackagePath>
+      <Modified>2023-11-11T14:56:01.774</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-1-Heads.mp4">
+      <PackagePath>Assets\Videos\Gold-1-Heads.mp4</PackagePath>
+      <Modified>2023-11-11T15:01:52.883</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-1-Tails.mp4">
+      <PackagePath>Assets\Videos\Gold-1-Tails.mp4</PackagePath>
+      <Modified>2023-11-11T14:58:26.028</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-2-Heads.mp4">
+      <PackagePath>Assets\Videos\Gold-2-Heads.mp4</PackagePath>
+      <Modified>2023-11-11T14:55:38.018</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Gold-2-Tails.mp4">
+      <PackagePath>Assets\Videos\Gold-2-Tails.mp4</PackagePath>
+      <Modified>2023-11-11T14:55:10.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-1-Heads.mp4">
+      <PackagePath>Assets\Videos\Silver-1-Heads.mp4</PackagePath>
+      <Modified>2023-11-11T15:03:54.253</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-1-Tails.mp4">
+      <PackagePath>Assets\Videos\Silver-1-Tails.mp4</PackagePath>
+      <Modified>2023-11-11T15:02:50.503</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-2-Heads.mp4">
+      <PackagePath>Assets\Videos\Silver-2-Heads.mp4</PackagePath>
+      <Modified>2023-11-11T14:54:43.711</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Videos\Silver-2-Tails.mp4">
+      <PackagePath>Assets\Videos\Silver-2-Tails.mp4</PackagePath>
+      <Modified>2023-11-11T14:54:00.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2023-11-12T13:55:51.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2023-11-10T12:32:48.236</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-11-10T12:32:48.237</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-11-10T12:32:48.238</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-11-10T12:32:48.238</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-11-10T12:32:48.239</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-11-10T12:32:48.239</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-11-10T12:32:48.240</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\CoinFlipApp.xr.xml">
+      <PackagePath>CoinFlipApp.xr.xml</PackagePath>
+      <Modified>2023-11-20T11:33:26.661</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2023-11-27T11:24:35.542</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\GuessFlip.xbf">
+      <PackagePath>GuessFlip.xbf</PackagePath>
+      <Modified>2023-11-27T11:24:35.539</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2023-11-27T11:24:35.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2020-12-02T01:52:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2023-11-27T11:21:58.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Coin-Flip-App\App\CoinFlipApp\bin\x86\Debug\Core\CoinFlipApp.exe">
+      <PackagePath>CoinFlipApp.exe</PackagePath>
+      <Modified>2023-11-27T11:24:36.254</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.31331.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.31331.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.31331.1</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.31327.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.31327.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.31327.1</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

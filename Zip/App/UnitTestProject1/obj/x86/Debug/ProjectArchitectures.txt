@@ -1,0 +1,2 @@
+C:\Users\1742914\Downloads\Coin-Flip-App\App\CoinFlipApp\CoinFlipApp.csproj;x86
+C:\Users\1742914\Downloads\Coin-Flip-App\App\UnitTestProject1\UnitTestProject1.csproj;x86
