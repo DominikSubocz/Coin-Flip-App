@@ -81,6 +81,32 @@ namespace UnitTestProject1
             //Assert 
             Assert.AreEqual("Tails", flipMaster.Result, "The result should be 'Tails' when the guess is correct.");
         }
+
+        [TestMethod]
+        public void ChooseVideo_GoldCoin_1s_Heads_Test()
+        {
+
+            // Arrange
+            var videoMaster = new VideoMaster();
+
+
+
+            //Act
+            string testVideo = videoMaster.ChooseVideo("Gold", 1, "Heads");
+
+
+            //Assert
+            Assert.AreEqual("<ms-appx:///Assets/Videos/Gold-1-Heads.mp4>", testVideo, "The video's filename should be '<ms-appx:///Assets/Videos/Gold-1-Heads.mp4>'.");
+        }
     }
 
     }
+
+
+
+
+   
+
+
+
+    

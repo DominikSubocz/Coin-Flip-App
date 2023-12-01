@@ -9,7 +9,7 @@ namespace CoinFlipApp
     /// <summary>
     /// The VideoMaster class manages the selection of video files based on coin type, duration, and result.
     /// </summary>
-    internal class VideoMaster
+    public class VideoMaster
     {
 
         /// <summary>

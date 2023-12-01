@@ -14518,11 +14518,12 @@
       ]
     },
     "System.Runtime/4.1.0": {
-      "sha512": "v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
+      "sha512": "SwXraLtIWEZwfE/jOT+WFtP/tsX2KhIdgRQt330CQckx/pbRk7e/Aigak2hFjgdkRmdmVXz6lwkDXcdtj913Bg==",
       "type": "package",
       "path": "system.runtime/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -14928,18 +14929,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\stasi\\.nuget\\packages\\": {},
+    "C:\\Users\\1742914\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Coin-Flip-App\\App\\UnitTestProject1\\UnitTestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\UnitTestProject1\\UnitTestProject1.csproj",
       "projectName": "UnitTestProject1",
-      "projectPath": "F:\\Coin-Flip-App\\App\\UnitTestProject1\\UnitTestProject1.csproj",
-      "packagesPath": "C:\\Users\\stasi\\.nuget\\packages\\",
-      "outputPath": "F:\\Coin-Flip-App\\App\\UnitTestProject1\\obj\\",
+      "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\UnitTestProject1\\UnitTestProject1.csproj",
+      "packagesPath": "C:\\Users\\1742914\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\UnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -14947,7 +14948,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\stasi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\1742914\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -14961,8 +14962,8 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
-            "F:\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj": {
-              "projectPath": "F:\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj"
+            "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj": {
+              "projectPath": "C:\\Users\\1742914\\Downloads\\Coin-Flip-App\\App\\CoinFlipApp\\CoinFlipApp.csproj"
             }
           }
         }
