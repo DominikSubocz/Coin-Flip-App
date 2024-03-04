@@ -32,3 +32,13 @@ Keep track of your coin-flipping adventures. The history page stores details lik
 4. Build the solution.
 5. Select your target platform (e.g., Local Machine) and run the app.
 
+## Feedback and Support
+Considering the current work load I currently have in college, and the work load I will have in university next year I don't think this coin flip app will receive updates in the near future, not any time soon at least. 
+
+Let me know what do you think of it, what you like about it and what I could've done better.
+
+## Future Plans
+For future projects, I plan to have my projects more organized, especially with github - specifically making commits and labeling them as "a" over 70 times! Let's try not to do that again. 😅 
+
+
+
