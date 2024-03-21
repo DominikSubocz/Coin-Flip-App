@@ -3,20 +3,22 @@
 Welcome to the Coin Flip App! 🪙 Simple coin flip app that allows you to customise the coins and adds a guessing function for extra fun.
 
 ## Features
-1. Experience the classic thrill of flipping a digital coin. Let luck decide your fate!
-2. Challenge yourself by predicting the outcome of the coin flip. Can you guess it right?
-3. Customize your experience by choosing from different coin types. Make it your lucky charm!
-4. Tailor the speed of the coin flip to suit your preference. Fast or slow, it's up to you!
-5. Control the app's volume with ease. Flip the coin silently or enjoy the satisfying sound effects.
-6. Keep track of your coin-flipping adventures. The history page stores details like the game mode and results.
+* Coin Flip mode - Experience the classic thrill of flipping a digital coin. Let luck decide your fate!
+* Guess Flip mode - Challenge yourself by predicting the outcome of the coin flip. Can you guess it right?
+* Coin customization -Customize your experience by choosing from different coin types, flip duration & volume!
+* Flip history - Keep track of your coin-flipping adventures. The history panel stores details like the game mode and results.
+
 
 ## Installation
+ 
+1. Open Visual Studio, navigate to /Zip/App/CoinFlipApp inside the 'Coin-Flip-App' folder.
+2. A message box 'Review Solution Actions' should pop up, just click 'OK'.
+3. Click the green play button to run the app.
 
-1. Open the project in Visual Studio.
-2. Navigate to the project folder.
-3. Open the solution file (CoinFlipApp.sln) in Visual Studio.
-4. Build the solution.
-5. Select your target platform (e.g., Local Machine) and run the app.
+## Known Bugs
+* Message pops up quicker before the actual video finishes - Guess Flip Mode.
+* Flip History saves your guess as not guessed, even thought you guessed correctly - Guess Flip Mode.
+* There are problems with sound player.
 
 ## Feedback and Support
 Considering the current work load I currently have in college, and the work load I will have in university next year I don't think this coin flip app will receive updates in the near future, not any time soon at least. 
